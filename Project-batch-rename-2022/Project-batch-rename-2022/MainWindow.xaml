@@ -5,8 +5,84 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Project_batch_rename_2022"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="500" Width="1000" Loaded="Window_Loaded">
     <Grid>
-
+        <Grid.RowDefinitions>
+            <RowDefinition  Height="25"/>
+            <RowDefinition  Height="*"/>
+            
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="0">
+            <Button x:Name="addRefresh_btn" Content="Refresh" Click="refesh_click"></Button>
+          
+        </StackPanel>
+        <Grid Grid.Row="1" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="4*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBlock Background="Green" Grid.Column="0" Grid.Row="0"></TextBlock>
+            <TabControl Grid.Row="0" Grid.Column="1" >
+                <TabItem Header="Rename Files">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="25"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="0">
+                            <Button x:Name="addFiles_btn" Content="Add" Click="selectFilesBtn_click"/>
+                        </StackPanel>
+                        <ListView x:Name="FilesListView" Grid.Row="1" Grid.Column="0">
+                            <ListView.View>
+                                <GridView>
+                                    <GridViewColumn Header="Filename" Width="150" DisplayMemberBinding="{Binding Filename}"/>
+                                    <GridViewColumn Header="New Filename" Width="150" DisplayMemberBinding="{Binding NewFilename}"/>
+                                    <GridViewColumn Header="Path" Width="160" DisplayMemberBinding="{Binding Pathname}"/>
+                                    <GridViewColumn Header="Error" Width="200"  DisplayMemberBinding="{Binding Error}"/>
+                                    <GridViewColumn Header="Status" Width="45"  DisplayMemberBinding="{Binding Status}"/>
+                                </GridView>
+                            </ListView.View>
+                          
+                        </ListView>
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Rename Folders">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="25"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="0">
+                            <Button x:Name="addFolders_btn" Content="Add" Click="addFolders_btn_Click"/>
+                        </StackPanel>
+                        <ListView x:Name="FoldersListView" Grid.Row="1" Grid.Column="0">
+                            <ListView.View>
+                                <GridView>
+                                    <GridViewColumn Header="Filename" Width="150" DisplayMemberBinding="{Binding Filename}"/>
+                                    <GridViewColumn Header="New Filename" Width="150" DisplayMemberBinding="{Binding NewFilename}"/>
+                                    <GridViewColumn Header="Path" Width="160" DisplayMemberBinding="{Binding Pathname}"/>
+                                    <GridViewColumn Header="Error" Width="200"  DisplayMemberBinding="{Binding Error}"/>
+                                    <GridViewColumn Header="Status" Width="45"  DisplayMemberBinding="{Binding Status}"/>
+                                </GridView>
+                            </ListView.View>
+                        </ListView>
+                    </Grid>
+                </TabItem>
+               
+            </TabControl>
+        </Grid>
+        
     </Grid>
 </Window>
