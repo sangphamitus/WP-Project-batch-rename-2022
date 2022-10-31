@@ -28,3 +28,33 @@ C:\Users\Sang\Desktop\Nam3\HK1\WP\ĐA\DA1\source\Project-batch-rename-2022\Proje
 C:\Users\Sang\Desktop\Nam3\HK1\WP\ĐA\DA1\source\Project-batch-rename-2022\Project-batch-rename-2022\obj\Debug\net6.0-windows\Project-batch-rename-2022.csproj.Fody.CopyLocal.cache
 C:\Users\Sang\Desktop\Nam3\HK1\WP\ĐA\DA1\source\Project-batch-rename-2022\Project-batch-rename-2022\obj\Debug\net6.0-windows\Project-batch-rename-2022.csproj.Fody.RuntimeCopyLocal.cache
 C:\Users\Sang\Desktop\Nam3\HK1\WP\ĐA\DA1\source\Project-batch-rename-2022\Project-batch-rename-2022\obj\Debug\net6.0-windows\Project-batch-rename-2022.csproj.CopyComplete
+E:\Hk1_năm 3\Lập trình win\Đồ án 1\clone\WP-Project-batch-rename-2022\Project-batch-rename-2022\Project-batch-rename-2022\bin\Debug\net6.0-windows\Project-batch-rename-2022.exe
+E:\Hk1_năm 3\Lập trình win\Đồ án 1\clone\WP-Project-batch-rename-2022\Project-batch-rename-2022\Project-batch-rename-2022\bin\Debug\net6.0-windows\Project-batch-rename-2022.deps.json
+E:\Hk1_năm 3\Lập trình win\Đồ án 1\clone\WP-Project-batch-rename-2022\Project-batch-rename-2022\Project-batch-rename-2022\bin\Debug\net6.0-windows\Project-batch-rename-2022.runtimeconfig.json
+E:\Hk1_năm 3\Lập trình win\Đồ án 1\clone\WP-Project-batch-rename-2022\Project-batch-rename-2022\Project-batch-rename-2022\bin\Debug\net6.0-windows\Project-batch-rename-2022.dll
+E:\Hk1_năm 3\Lập trình win\Đồ án 1\clone\WP-Project-batch-rename-2022\Project-batch-rename-2022\Project-batch-rename-2022\bin\Debug\net6.0-windows\Project-batch-rename-2022.pdb
+E:\Hk1_năm 3\Lập trình win\Đồ án 1\clone\WP-Project-batch-rename-2022\Project-batch-rename-2022\Project-batch-rename-2022\bin\Debug\net6.0-windows\ControlzEx.dll
+E:\Hk1_năm 3\Lập trình win\Đồ án 1\clone\WP-Project-batch-rename-2022\Project-batch-rename-2022\Project-batch-rename-2022\bin\Debug\net6.0-windows\Fluent.dll
+E:\Hk1_năm 3\Lập trình win\Đồ án 1\clone\WP-Project-batch-rename-2022\Project-batch-rename-2022\Project-batch-rename-2022\bin\Debug\net6.0-windows\Microsoft.WindowsAPICodePack.dll
+E:\Hk1_năm 3\Lập trình win\Đồ án 1\clone\WP-Project-batch-rename-2022\Project-batch-rename-2022\Project-batch-rename-2022\bin\Debug\net6.0-windows\Microsoft.WindowsAPICodePack.Shell.dll
+E:\Hk1_năm 3\Lập trình win\Đồ án 1\clone\WP-Project-batch-rename-2022\Project-batch-rename-2022\Project-batch-rename-2022\bin\Debug\net6.0-windows\Microsoft.WindowsAPICodePack.ShellExtensions.dll
+E:\Hk1_năm 3\Lập trình win\Đồ án 1\clone\WP-Project-batch-rename-2022\Project-batch-rename-2022\Project-batch-rename-2022\bin\Debug\net6.0-windows\Microsoft.Xaml.Behaviors.dll
+E:\Hk1_năm 3\Lập trình win\Đồ án 1\clone\WP-Project-batch-rename-2022\Project-batch-rename-2022\Project-batch-rename-2022\obj\Debug\net6.0-windows\Project-batch-rename-2022.csproj.AssemblyReference.cache
+E:\Hk1_năm 3\Lập trình win\Đồ án 1\clone\WP-Project-batch-rename-2022\Project-batch-rename-2022\Project-batch-rename-2022\obj\Debug\net6.0-windows\MainWindow.g.cs
+E:\Hk1_năm 3\Lập trình win\Đồ án 1\clone\WP-Project-batch-rename-2022\Project-batch-rename-2022\Project-batch-rename-2022\obj\Debug\net6.0-windows\App.g.cs
+E:\Hk1_năm 3\Lập trình win\Đồ án 1\clone\WP-Project-batch-rename-2022\Project-batch-rename-2022\Project-batch-rename-2022\obj\Debug\net6.0-windows\Project-batch-rename-2022_MarkupCompile.cache
+E:\Hk1_năm 3\Lập trình win\Đồ án 1\clone\WP-Project-batch-rename-2022\Project-batch-rename-2022\Project-batch-rename-2022\obj\Debug\net6.0-windows\Project-batch-rename-2022_MarkupCompile.lref
+E:\Hk1_năm 3\Lập trình win\Đồ án 1\clone\WP-Project-batch-rename-2022\Project-batch-rename-2022\Project-batch-rename-2022\obj\Debug\net6.0-windows\MainWindow.baml
+E:\Hk1_năm 3\Lập trình win\Đồ án 1\clone\WP-Project-batch-rename-2022\Project-batch-rename-2022\Project-batch-rename-2022\obj\Debug\net6.0-windows\Project-batch-rename-2022.g.resources
+E:\Hk1_năm 3\Lập trình win\Đồ án 1\clone\WP-Project-batch-rename-2022\Project-batch-rename-2022\Project-batch-rename-2022\obj\Debug\net6.0-windows\Project-batch-rename-2022.GeneratedMSBuildEditorConfig.editorconfig
+E:\Hk1_năm 3\Lập trình win\Đồ án 1\clone\WP-Project-batch-rename-2022\Project-batch-rename-2022\Project-batch-rename-2022\obj\Debug\net6.0-windows\Project-batch-rename-2022.AssemblyInfoInputs.cache
+E:\Hk1_năm 3\Lập trình win\Đồ án 1\clone\WP-Project-batch-rename-2022\Project-batch-rename-2022\Project-batch-rename-2022\obj\Debug\net6.0-windows\Project-batch-rename-2022.AssemblyInfo.cs
+E:\Hk1_năm 3\Lập trình win\Đồ án 1\clone\WP-Project-batch-rename-2022\Project-batch-rename-2022\Project-batch-rename-2022\obj\Debug\net6.0-windows\Project-batch-rename-2022.csproj.CoreCompileInputs.cache
+E:\Hk1_năm 3\Lập trình win\Đồ án 1\clone\WP-Project-batch-rename-2022\Project-batch-rename-2022\Project-batch-rename-2022\obj\Debug\net6.0-windows\Project-batch-rename-2022.csproj.Fody.CopyLocal.cache
+E:\Hk1_năm 3\Lập trình win\Đồ án 1\clone\WP-Project-batch-rename-2022\Project-batch-rename-2022\Project-batch-rename-2022\obj\Debug\net6.0-windows\Project-batch-rename-2022.csproj.Fody.RuntimeCopyLocal.cache
+E:\Hk1_năm 3\Lập trình win\Đồ án 1\clone\WP-Project-batch-rename-2022\Project-batch-rename-2022\Project-batch-rename-2022\obj\Debug\net6.0-windows\Project-batch-rename-2022.csproj.CopyComplete
+E:\Hk1_năm 3\Lập trình win\Đồ án 1\clone\WP-Project-batch-rename-2022\Project-batch-rename-2022\Project-batch-rename-2022\obj\Debug\net6.0-windows\Project-batch-rename-2022.dll
+E:\Hk1_năm 3\Lập trình win\Đồ án 1\clone\WP-Project-batch-rename-2022\Project-batch-rename-2022\Project-batch-rename-2022\obj\Debug\net6.0-windows\refint\Project-batch-rename-2022.dll
+E:\Hk1_năm 3\Lập trình win\Đồ án 1\clone\WP-Project-batch-rename-2022\Project-batch-rename-2022\Project-batch-rename-2022\obj\Debug\net6.0-windows\Project-batch-rename-2022.pdb
+E:\Hk1_năm 3\Lập trình win\Đồ án 1\clone\WP-Project-batch-rename-2022\Project-batch-rename-2022\Project-batch-rename-2022\obj\Debug\net6.0-windows\Project-batch-rename-2022.genruntimeconfig.cache
+E:\Hk1_năm 3\Lập trình win\Đồ án 1\clone\WP-Project-batch-rename-2022\Project-batch-rename-2022\Project-batch-rename-2022\obj\Debug\net6.0-windows\ref\Project-batch-rename-2022.dll
