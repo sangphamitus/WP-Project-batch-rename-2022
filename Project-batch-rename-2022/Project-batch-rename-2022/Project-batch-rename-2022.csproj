@@ -6,12 +6,57 @@
     <RootNamespace>Project_batch_rename_2022</RootNamespace>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>icons\ic_rename.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="icons\add-items.png" />
+    <None Remove="icons\add-rule.png" />
+    <None Remove="icons\delete.png" />
+    <None Remove="icons\ic_rename.png" />
+    <None Remove="icons\move-down.png" />
+    <None Remove="icons\move-to-bottom.png" />
+    <None Remove="icons\move-to-top.png" />
+    <None Remove="icons\move-up.png" />
+    <None Remove="icons\new-project.png" />
+    <None Remove="icons\open-project.png" />
+    <None Remove="icons\open.png" />
+    <None Remove="icons\preview.png" />
+    <None Remove="icons\read-me.png" />
+    <None Remove="icons\reset-rule.png" />
+    <None Remove="icons\save-project.png" />
+    <None Remove="icons\save.png" />
+    <None Remove="icons\start.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="icons\ic_rename.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Fluent.Ribbon" Version="9.0.4" />
     <PackageReference Include="Microsoft.WindowsAPICodePack-Shell" Version="1.1.0" />
     <PackageReference Include="PropertyChanged.Fody" Version="4.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="icons\add-items.png" />
+    <Resource Include="icons\add-rule.png" />
+    <Resource Include="icons\delete.png" />
+    <Resource Include="icons\ic_rename.png" />
+    <Resource Include="icons\move-down.png" />
+    <Resource Include="icons\move-to-bottom.png" />
+    <Resource Include="icons\move-to-top.png" />
+    <Resource Include="icons\move-up.png" />
+    <Resource Include="icons\new-project.png" />
+    <Resource Include="icons\open-project.png" />
+    <Resource Include="icons\open.png" />
+    <Resource Include="icons\preview.png" />
+    <Resource Include="icons\read-me.png" />
+    <Resource Include="icons\reset-rule.png" />
+    <Resource Include="icons\save-project.png" />
+    <Resource Include="icons\save.png" />
+    <Resource Include="icons\start.png" />
   </ItemGroup>
 
 </Project>
