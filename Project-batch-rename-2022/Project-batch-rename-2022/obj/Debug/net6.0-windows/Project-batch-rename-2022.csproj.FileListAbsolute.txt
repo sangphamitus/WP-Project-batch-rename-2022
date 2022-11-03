@@ -28,3 +28,5 @@ C:\Users\Sang\Desktop\Nam3\HK1\WP\ĐA\DA1\source\Project-batch-rename-2022\Proje
 C:\Users\Sang\Desktop\Nam3\HK1\WP\ĐA\DA1\source\Project-batch-rename-2022\Project-batch-rename-2022\obj\Debug\net6.0-windows\Project-batch-rename-2022.csproj.Fody.CopyLocal.cache
 C:\Users\Sang\Desktop\Nam3\HK1\WP\ĐA\DA1\source\Project-batch-rename-2022\Project-batch-rename-2022\obj\Debug\net6.0-windows\Project-batch-rename-2022.csproj.Fody.RuntimeCopyLocal.cache
 C:\Users\Sang\Desktop\Nam3\HK1\WP\ĐA\DA1\source\Project-batch-rename-2022\Project-batch-rename-2022\obj\Debug\net6.0-windows\Project-batch-rename-2022.csproj.CopyComplete
+C:\Users\Sang\Desktop\Nam3\HK1\WP\ĐA\DA1\source\Project-batch-rename-2022\Project-batch-rename-2022\obj\Debug\net6.0-windows\App.baml
+C:\Users\Sang\Desktop\Nam3\HK1\WP\ĐA\DA1\source\Project-batch-rename-2022\Project-batch-rename-2022\obj\Debug\net6.0-windows\Project-batch-rename-2022_Content.g.cs
