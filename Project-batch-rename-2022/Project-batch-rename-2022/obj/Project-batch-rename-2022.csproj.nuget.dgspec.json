@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Destop\\Windows\\WP-Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022.csproj": {}
+    "D:\\Destop\\win\\WP-Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022.csproj": {}
   },
   "projects": {
-    "D:\\Destop\\Windows\\WP-Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022.csproj": {
+    "D:\\Destop\\win\\WP-Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Destop\\Windows\\WP-Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022.csproj",
+        "projectUniqueName": "D:\\Destop\\win\\WP-Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022.csproj",
         "projectName": "Project-batch-rename-2022",
-        "projectPath": "D:\\Destop\\Windows\\WP-Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022.csproj",
+        "projectPath": "D:\\Destop\\win\\WP-Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022.csproj",
         "packagesPath": "C:\\Users\\HAI YEN\\.nuget\\packages\\",
-        "outputPath": "D:\\Destop\\Windows\\WP-Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022\\obj\\",
+        "outputPath": "D:\\Destop\\win\\WP-Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HAI YEN\\AppData\\Roaming\\NuGet\\NuGet.Config",
