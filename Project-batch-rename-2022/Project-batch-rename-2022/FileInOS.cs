@@ -15,6 +15,7 @@ namespace Project_batch_rename_2022
         public string Pathname { get; set; }
         public string Error { get; set; }
 
+        public string Type { get; set; }
         public int Status { get; set;}
 
         public event PropertyChangedEventHandler? PropertyChanged;

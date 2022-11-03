@@ -7,7 +7,7 @@
         xmlns:local="clr-namespace:Project_batch_rename_2022"
         mc:Ignorable="d"
         Title="BatchRename" Height="650" Width="1000" Loaded="Window_Loaded">
-
+  
     <StackPanel Orientation="Vertical">
         <Fluent:Ribbon>
             <Fluent:RibbonTabItem Header="Home">
@@ -46,7 +46,8 @@
                     </Fluent:ComboBox>
 
                     <Fluent:Button Header="Add Items" Icon="icons/add-items.png" LargeIcon="icons/add-items.png"  Padding="4, 4, 4, 0" Click="addItems" />
-               
+                    <Fluent:Button Header="Resets Item List" Icon="icons/reset-rule.png" LargeIcon="icons/reset-rule.png"  Padding="4, 4, 4, 0" Click="resetItems" />
+
 
                 </Fluent:RibbonGroupBox>
                 <Fluent:RibbonGroupBox Header="Batch Actions">
@@ -129,19 +130,37 @@
             </StackPanel>
             <StackPanel Margin="8, 0, 8, 0">
                 <Label Content="Chosen Item(s)" Margin="8,0,0,0"/>
-                <ListView Name="ItemListView" Height="478" Width="720" VerticalAlignment="Top"
-                          Drop="ItemsDrop" AllowDrop="True">
+                <ListView Name="ItemListView" Height="478" Width="920" VerticalAlignment="Top"
+                          Drop="ItemsDrop" AllowDrop="True" SelectionChanged="ItemListView_SelectionChanged">
+
+                    <ListView.ItemContainerStyle>
+                        <Style TargetType="ListViewItem">
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding Type}" Value="File">
+                                    <Setter Property="Background" Value="#CDFCF6"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding Type}" Value="Folder">
+                                    <Setter Property="Background" Value="#FFF5E4"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding Type}" Value="">
+                                    <Setter Property="Background" Value="White"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </ListView.ItemContainerStyle>
                     <ListView.Resources>
                         <ContextMenu x:Key="ItemContextMenu">
                             <MenuItem Header="Remove"/>
                         </ContextMenu>
+                      
                     </ListView.Resources>
                     <ListView.View>
                         <GridView>
-                            <GridViewColumn Header="Filename" Width="150" DisplayMemberBinding="{Binding Filename}"/>
+                            <GridViewColumn Header="Filename"  Width="150" DisplayMemberBinding="{Binding Filename}"/>
                             <GridViewColumn Header="New Filename" Width="150" DisplayMemberBinding="{Binding NewFilename}"/>
+                            <GridViewColumn Header="Type" Width="90" DisplayMemberBinding="{Binding Type}"/>
                             <GridViewColumn Header="Path" Width="160" DisplayMemberBinding="{Binding Pathname}"/>
-                            <GridViewColumn Header="Error" Width="200"  DisplayMemberBinding="{Binding Error}"/>
+                            <GridViewColumn Header="Error" Width="140"  DisplayMemberBinding="{Binding Error}"/>
                             <GridViewColumn Header="Status" Width="45"  DisplayMemberBinding="{Binding Status}"/>
                        
                         </GridView>

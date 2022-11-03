@@ -38,7 +38,7 @@ namespace Project_batch_rename_2022
 
         ObservableCollection<FileInOS> _files = new ObservableCollection<FileInOS>();
         ObservableCollection<FolderInOS> _folders = new ObservableCollection<FolderInOS>();
-
+        ObservableCollection<object> _fullList= new ObservableCollection<object>();
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             itemTypes = new BindingList<string>()
@@ -55,7 +55,8 @@ namespace Project_batch_rename_2022
             };
 
             typeComboBox.ItemsSource = itemTypes;
-            ItemListView.ItemsSource = _files;
+          //  ItemListView.ItemsSource = _files;
+            ItemListView.ItemsSource = _fullList;
           
         }
 
@@ -102,10 +103,14 @@ namespace Project_batch_rename_2022
 
             if (typeComboBox.SelectedItem == null)
                 return;
-            if (typeComboBox.SelectedItem == "File")
-                ItemListView.ItemsSource = _files;
-            if (typeComboBox.SelectedItem == "Folder")
-                ItemListView.ItemsSource = _folders;
+            else
+            {
+                ItemListView.ItemsSource = _fullList;
+            }
+            //if (typeComboBox.SelectedItem == "File")
+            //    ItemListView.ItemsSource = _files;
+            //if (typeComboBox.SelectedItem == "Folder")
+            //    ItemListView.ItemsSource = _folders;
         }
 
         private void ItemsDrop(object sender, System.Windows.DragEventArgs e)
@@ -132,7 +137,7 @@ namespace Project_batch_rename_2022
             }
             if (typeComboBox.SelectedItem.ToString() == "File")
             {
-                ItemListView.ItemsSource = _files;
+               // ItemListView.ItemsSource = _files;
                 var screen = new CommonOpenFileDialog();
                 screen.IsFolderPicker = false;
                 screen.Multiselect = true;
@@ -157,12 +162,21 @@ namespace Project_batch_rename_2022
                             Error = "",
                             Status = 0
                         });
+                        _fullList.Add(new FileInOS
+                        {
+                            Filename = filename,
+                            NewFilename = "",
+                            Pathname = screen.FileNames.ToArray()[i],
+                            Type = "File",
+                            Error = "",
+                            Status = 0
+                        });
                     }
 
                 }
               
-
-                MessageBox.Show(screen.FileNames.Count() + " file(s) Added Successfully", "Success");
+               // if(screen.FileNames!= null)
+              //  MessageBox.Show(screen.FileNames.Count() + " file(s) Added Successfully", "Success");
             }
             else if (typeComboBox.SelectedItem.ToString() == "Folder")
             {
@@ -172,7 +186,7 @@ namespace Project_batch_rename_2022
                 int counter = 0;
                 if (System.Windows.Forms.DialogResult.OK == result)
                 {
-                    ItemListView.ItemsSource = _folders;
+                   // ItemListView.ItemsSource = _folders;
 
                     string path = dialog.SelectedPath + "\\";
                     string[] folders = Directory.GetDirectories(path);
@@ -194,17 +208,32 @@ namespace Project_batch_rename_2022
 
                         if (!isExisted)
                         {
-                            newFoldernames.Add(new FolderInOS() { Filename = currentName, Pathname = path });
+                            newFoldernames.Add(new FolderInOS() { Filename = currentName, 
+                                                                Pathname = path, 
+                                                                   Type="Folder"});
                             counter++;
                         }
                     }
                     foreach (var newFoldername in newFoldernames)
+                    {
+                        _fullList.Add(newFoldername);
                         _folders.Add(newFoldername);
+                    }
 
-                    MessageBox.Show(counter + " folder(s) Added Successfully", "Success");
+                    //MessageBox.Show(counter + " folder(s) Added Successfully", "Success");
                 }
 
             }
+        }
+
+        private void ItemListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void resetItems(object sender, RoutedEventArgs e)
+        {
+            _fullList.Clear();
         }
     }
 }
