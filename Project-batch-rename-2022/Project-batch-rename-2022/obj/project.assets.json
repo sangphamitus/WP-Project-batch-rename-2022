@@ -311,19 +311,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Sang\\.nuget\\packages\\": {}
+    "C:\\Users\\HAI YEN\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022.csproj",
+      "projectUniqueName": "D:\\Destop\\Windows\\WP-Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022.csproj",
       "projectName": "Project-batch-rename-2022",
-      "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022.csproj",
-      "packagesPath": "C:\\Users\\Sang\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\Project-batch-rename-2022\\obj\\",
+      "projectPath": "D:\\Destop\\Windows\\WP-Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022.csproj",
+      "packagesPath": "C:\\Users\\HAI YEN\\.nuget\\packages\\",
+      "outputPath": "D:\\Destop\\Windows\\WP-Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Sang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\HAI YEN\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -381,7 +381,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   },
