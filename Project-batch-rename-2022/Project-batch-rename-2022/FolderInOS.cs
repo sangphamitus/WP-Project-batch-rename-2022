@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Project_batch_rename_2022
 {
-    internal class FolderInOS : INotifyPropertyChanged, ICloneable
+    internal class FolderInOS : INotifyPropertyChanged, ICloneable,FileChange
     {
         public string Filename { get; set; }
 
@@ -22,6 +22,11 @@ namespace Project_batch_rename_2022
         public object Clone()
         {
             return MemberwiseClone();
+        }
+
+        public string getType()
+        {
+            return "Folder";
         }
     }
 }

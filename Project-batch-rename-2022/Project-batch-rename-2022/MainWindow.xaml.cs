@@ -20,6 +20,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using static Project_batch_rename_2022.removeSpace;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 using MessageBox = System.Windows.Forms.MessageBox;
 
@@ -31,6 +32,8 @@ namespace Project_batch_rename_2022
     public partial class MainWindow :RibbonWindow
     {
         BindingList<string> itemTypes;
+        BindingList<string> ruleNames;
+        BindingList<Rules> _rulesList= new BindingList<Rules>();
         public MainWindow()
         {
             InitializeComponent();
@@ -38,13 +41,42 @@ namespace Project_batch_rename_2022
 
         ObservableCollection<FileInOS> _files = new ObservableCollection<FileInOS>();
         ObservableCollection<FolderInOS> _folders = new ObservableCollection<FolderInOS>();
-        ObservableCollection<object> _fullList= new ObservableCollection<object>();
+        ObservableCollection<FileChange> _fullList= new ObservableCollection<FileChange>();
+        
+        /// <summary>
+        /// rules goes here
+        /// </summary>
+       
+    
+  
+        
+
+
+        ObservableCollection<object> _ruleList = new ObservableCollection<object>();
+        
+
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             itemTypes = new BindingList<string>()
             {
-                "File", "Folder"
+                "File",
+                "Folder",
+                "All Files in Folder (Recursive)"
             };
+            ruleNames = new BindingList<string>()
+            {
+                "Change extension",
+                 "Add Counter",
+                 "Trim",
+                 "Remove white space",
+                 "Replace character",
+                 "Add a prefix",
+                 "Add a subffix",
+                 "Lowercase",
+                 "PascalCase"
+
+            };
+            
             _files = new ObservableCollection<FileInOS>()
             {
   
@@ -57,7 +89,10 @@ namespace Project_batch_rename_2022
             typeComboBox.ItemsSource = itemTypes;
           //  ItemListView.ItemsSource = _files;
             ItemListView.ItemsSource = _fullList;
-          
+            rulesComboBox.ItemsSource = ruleNames;
+            chosenRulesListView.ItemsSource = _rulesList;
+
+
         }
 
   
@@ -165,14 +200,14 @@ namespace Project_batch_rename_2022
                         _fullList.Add(new FileInOS
                         {
                             Filename = filename,
-                            NewFilename = "",
+                            NewFilename = filename,
                             Pathname = screen.FileNames.ToArray()[i],
                             Type = "File",
                             Error = "",
                             Status = 0
                         });
                     }
-
+                    MessageBox.Show(screen.FileNames.Count() + " file(s) Added Successfully", "Success");
                 }
               
                // if(screen.FileNames!= null)
@@ -209,6 +244,7 @@ namespace Project_batch_rename_2022
                         if (!isExisted)
                         {
                             newFoldernames.Add(new FolderInOS() { Filename = currentName, 
+                                                                NewFilename=currentName,
                                                                 Pathname = path, 
                                                                    Type="Folder"});
                             counter++;
@@ -220,9 +256,53 @@ namespace Project_batch_rename_2022
                         _folders.Add(newFoldername);
                     }
 
-                    //MessageBox.Show(counter + " folder(s) Added Successfully", "Success");
+                    MessageBox.Show(counter + " folder(s) Added Successfully", "Success");
                 }
 
+            }
+            else if (typeComboBox.SelectedItem.ToString() == "All Files in Folder (Recursive)")
+            {
+                var dialog = new System.Windows.Forms.FolderBrowserDialog();
+                var result = dialog.ShowDialog();
+
+                int counter = 0;
+                if (System.Windows.Forms.DialogResult.OK == result)
+                {
+                    // ItemListView.ItemsSource = _folders;
+
+                    string path = dialog.SelectedPath + "\\";
+                    RecursiveReadFile(path);
+                }
+
+            }
+            applyChangeForRules();
+        }
+        private void RecursiveReadFile(string folder)
+        {
+            try
+            {
+                foreach (string d in Directory.GetDirectories(folder))
+                {
+                    foreach (string f in Directory.GetFiles(d))
+                    {
+                        String[] filenameSplit =f.Split('\\');
+                        String filename = filenameSplit[filenameSplit.Length - 1];
+                        _fullList.Add(new FileInOS
+                        {
+                            Filename = filename,
+                            NewFilename = filename,
+                            Pathname = f,
+                            Type = "File",
+                            Error = "",
+                            Status = 0
+                        });
+                    }
+                    RecursiveReadFile(d);
+                }
+            }
+            catch (System.Exception excpt)
+            {
+                Console.WriteLine(excpt.Message);
             }
         }
 
@@ -234,6 +314,137 @@ namespace Project_batch_rename_2022
         private void resetItems(object sender, RoutedEventArgs e)
         {
             _fullList.Clear();
+        }
+
+        private void addRuleBtnClick(object sender, RoutedEventArgs e)
+        {
+            if (rulesComboBox.SelectedItem == null)
+            {
+                MessageBox.Show("Please choose rule", "Error");
+                return;
+            }
+            switch(rulesComboBox.SelectedItem.ToString())
+            {
+                case "Change extension":
+                    ChangeExtension _changeExtension = new ChangeExtension();
+                    _rulesList.Add(_changeExtension);
+                    break;
+                case "Add Counter":
+                    addCounter _addCounter = new addCounter();
+                    _rulesList.Add(_addCounter);
+
+                    break;
+                case "Trim":
+                    removeSpace _removeSpace = new removeSpace();
+                    _rulesList.Add(_removeSpace);
+                    break;
+                case "Remove white space":
+
+                    deleteWhiteSpace _deleteWhiteSpace = new deleteWhiteSpace();
+                    _rulesList.Add(_deleteWhiteSpace);
+                    break;
+
+                case "Replace character":
+                    replaceCharacters _replaceCharacters = new replaceCharacters();
+                    _rulesList.Add(_replaceCharacters);
+
+                    break;
+                case "Add a prefix":
+                    addPrefix _addPrefix = new addPrefix("");
+                    _rulesList.Add(_addPrefix);
+                    break;
+
+                case "Add a subffix":
+                    addSuffix _addSuffix = new addSuffix("");
+                    _rulesList.Add(_addSuffix);
+                    break;
+
+                case "Lowercase":
+                    toLowerCase _toLowerCase = new toLowerCase();
+                    _rulesList.Add(_toLowerCase);
+                    break;
+
+                case "PascalCase":
+
+                    toPascalCase _toPascalCase = new toPascalCase();
+                    _rulesList.Add(_toPascalCase);
+                    break;
+
+                default:
+                    return;
+            }
+            applyChangeForRules();
+        }
+
+        private void ChosenRule_DoubleClick(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void EditRules(object sender, RoutedEventArgs e)
+        {
+            int index=chosenRulesListView.SelectedIndex;
+            if (index == -1)
+            {
+                MessageBox.Show("Invalid Rule");
+            }
+        }
+
+        private void resetRuleBtnClick(object sender, RoutedEventArgs e)
+        {
+            _rulesList.Clear();
+            foreach (FileChange item in _fullList)
+            {
+                switch (item.getType())
+                {
+                    case "File":
+                        ((FileInOS)item).NewFilename = ((FileInOS)item).Filename;
+                        break;
+
+                    case "Folder":
+                        ((FolderInOS)item).NewFilename = ((FolderInOS)item).Filename;
+                        break;
+                }
+
+            }
+        }
+        private string applyChangeOnFile(string filename)
+        {
+            string res = filename;
+            foreach (Rules rule in _rulesList)
+            {
+                res = rule.applyRule(res);
+            }
+            return res;
+        }
+        private void applyChangeForRules()
+        {
+            foreach (Rules rule in _rulesList)
+            {
+                rule.reset();
+            }
+           
+            foreach (FileChange item in _fullList)
+            {
+                switch (item.getType())
+                {
+                    case "File":
+                        ((FileInOS)item).NewFilename =applyChangeOnFile( ((FileInOS)item).Filename);
+                        break;
+
+                    case "Folder":
+                        ((FolderInOS)item).NewFilename =applyChangeOnFile( ((FolderInOS)item).Filename);
+                        break;
+                }
+
+            }
+        }
+
+        private void removeRuleBtnClick(object sender, RoutedEventArgs e)
+        {
+            int index = chosenRulesListView.SelectedIndex;
+            _rulesList.RemoveAt(index);
+            applyChangeForRules();
         }
     }
 }

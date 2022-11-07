@@ -24,15 +24,16 @@
                     <Fluent:ComboBox x:Name="rulesComboBox"  Width="150" Height="25" Margin="0, 12, 0, 0" Text="-- Choose a rule --">
                         <Fluent:ComboBox.ItemTemplate>
                             <DataTemplate>
-                                <TextBlock Text="choose"/>
+                                <TextBlock Text="{Binding}"/>
                             </DataTemplate>
                         </Fluent:ComboBox.ItemTemplate>
                     </Fluent:ComboBox>
                     <Fluent:Button Icon="icons/add-rule.png" LargeIcon="icons/add-rule.png" Padding="4, 4, 4, 0"  Header="Add Rules"
+                                   Click="addRuleBtnClick"
                                  />
 
                     <Fluent:Button Header="Reset Rules"
-                                   Icon="icons/reset-rule.png" LargeIcon="icons/reset-rule.png" Padding="4, 4, 4, 0" Click="Button_Click_1" 
+                                   Icon="icons/reset-rule.png" LargeIcon="icons/reset-rule.png" Padding="4, 4, 4, 0" Click="resetRuleBtnClick" 
                                  />
                 </Fluent:RibbonGroupBox>
                 <Fluent:RibbonGroupBox Header="Items Actions">
@@ -105,7 +106,7 @@
                             <ToolTip Content="Move Rule To Bottom"/>
                         </Button.ToolTip>
                     </Button>
-                    <Button Width="40" Height="30" Margin="0,4,0,4" Background="Transparent" BorderThickness="0">
+                    <Button Width="40" Height="30" Margin="0,4,0,4" Background="Transparent" BorderThickness="0" Click="removeRuleBtnClick">
                         <Image Source="icons/delete.png" RenderOptions.BitmapScalingMode="HighQuality"/>
                         <Button.ToolTip>
                             <ToolTip Content="Delete Chosen Rule"/>
@@ -115,22 +116,27 @@
                 <ListView Name="chosenRulesListView" Width="200" Height="440" Margin="8,0,0,0">
                     <ListView.Resources>
                         <ContextMenu x:Key="ChosenRuleContextMenu">
-                            <MenuItem Header="Edit Parameters" />
+                            <MenuItem Header="Edit Parameters" Click="EditRules"/>
                             <MenuItem Header="Remove This Rule" />
                         </ContextMenu>
                     </ListView.Resources>
                     <ListView.ItemTemplate>
                         <DataTemplate>
-                            <TextBlock Text="Style goes here" VerticalAlignment="Center"/>
+                            <TextBlock Text="{Binding}" VerticalAlignment="Center"/>
                         </DataTemplate>
                     </ListView.ItemTemplate>
-                 
+                    <ListView.ItemContainerStyle>
+                        <Style TargetType="{x:Type ListViewItem}" >
+                            <Setter Property="ContextMenu" Value="{StaticResource ChosenRuleContextMenu}" />
+                            <EventSetter Event="MouseDoubleClick" Handler="ChosenRule_DoubleClick" />
+                        </Style>
+                    </ListView.ItemContainerStyle>
                 </ListView>
                 
             </StackPanel>
             <StackPanel Margin="8, 0, 8, 0">
                 <Label Content="Chosen Item(s)" Margin="8,0,0,0"/>
-                <ListView Name="ItemListView" Height="478" Width="920" VerticalAlignment="Top"
+                <ListView Name="ItemListView" Height="478" Width="750" VerticalAlignment="Top"
                           Drop="ItemsDrop" AllowDrop="True" SelectionChanged="ItemListView_SelectionChanged">
 
                     <ListView.ItemContainerStyle>
