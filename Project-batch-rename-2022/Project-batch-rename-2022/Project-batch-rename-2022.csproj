@@ -40,6 +40,19 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AddCounter\AddCounter.csproj" />
+    <ProjectReference Include="..\AddPrefix\AddPrefix.csproj" />
+    <ProjectReference Include="..\AddSuffix\AddSuffix.csproj" />
+    <ProjectReference Include="..\ChangeExtension\ChangeExtension.csproj" />
+    <ProjectReference Include="..\DeleteWhiteSpace\DeleteWhiteSpace.csproj" />
+    <ProjectReference Include="..\IRule\IRule.csproj" />
+    <ProjectReference Include="..\LowerCase\LowerCase.csproj" />
+    <ProjectReference Include="..\PascalCase\PascalCase.csproj" />
+    <ProjectReference Include="..\RemoveSpace\RemoveSpace.csproj" />
+    <ProjectReference Include="..\ReplaceCharaters\ReplaceCharaters.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="icons\add-items.png" />
     <Resource Include="icons\add-rule.png" />
     <Resource Include="icons\delete.png" />
