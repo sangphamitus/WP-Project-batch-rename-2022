@@ -1,6 +1,7 @@
 ﻿
 
 using IRule;
+using System.ComponentModel.Design;
 
 namespace ReplaceCharaters
 {
@@ -48,6 +49,16 @@ namespace ReplaceCharaters
 
         public static string ruleName { get => "Replace Character"; }
 
-    
+      
+
+        public bool isEditatble()
+        {
+            return true;
+        }
+
+        IRules? IRules.EditRule()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

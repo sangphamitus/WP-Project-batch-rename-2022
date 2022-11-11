@@ -5,25 +5,25 @@ VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project-batch-rename-2022", "Project-batch-rename-2022\Project-batch-rename-2022.csproj", "{508F9BEE-8619-4620-8FC7-AC16A5F74CF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IRule", "IRule\IRule.csproj", "{58AC283B-6A8B-4CCE-933B-DCA894529568}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IRule", "IRule\IRule.csproj", "{58AC283B-6A8B-4CCE-933B-DCA894529568}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChangeExtension", "ChangeExtension\ChangeExtension.csproj", "{D2C63AAC-39BF-4553-B7EA-D589FDA7C142}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChangeExtension", "ChangeExtension\ChangeExtension.csproj", "{D2C63AAC-39BF-4553-B7EA-D589FDA7C142}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveSpace", "RemoveSpace\RemoveSpace.csproj", "{5F923064-8B2A-47B5-B0F2-88F1EAB4ED45}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RemoveSpace", "RemoveSpace\RemoveSpace.csproj", "{5F923064-8B2A-47B5-B0F2-88F1EAB4ED45}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PascalCase", "PascalCase\PascalCase.csproj", "{24AA490F-DD85-4379-980A-1639DF3239FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PascalCase", "PascalCase\PascalCase.csproj", "{24AA490F-DD85-4379-980A-1639DF3239FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReplaceCharaters", "ReplaceCharaters\ReplaceCharaters.csproj", "{61301A43-808F-42C6-8F38-70513F1E1A35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReplaceCharaters", "ReplaceCharaters\ReplaceCharaters.csproj", "{61301A43-808F-42C6-8F38-70513F1E1A35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddCounter", "AddCounter\AddCounter.csproj", "{FDE55CCE-5BA2-44BA-9E14-669B728A4317}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AddCounter", "AddCounter\AddCounter.csproj", "{FDE55CCE-5BA2-44BA-9E14-669B728A4317}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeleteWhiteSpace", "DeleteWhiteSpace\DeleteWhiteSpace.csproj", "{F45A5BEE-BE0A-4F84-89F2-B8FDD0A20A7D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeleteWhiteSpace", "DeleteWhiteSpace\DeleteWhiteSpace.csproj", "{F45A5BEE-BE0A-4F84-89F2-B8FDD0A20A7D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LowerCase", "LowerCase\LowerCase.csproj", "{CD13F1C8-C09C-4938-AA09-EDCED413A16C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LowerCase", "LowerCase\LowerCase.csproj", "{CD13F1C8-C09C-4938-AA09-EDCED413A16C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddPrefix", "AddPrefix\AddPrefix.csproj", "{0EA0AD59-FF7A-42DD-8C73-E0A722022352}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AddPrefix", "AddPrefix\AddPrefix.csproj", "{0EA0AD59-FF7A-42DD-8C73-E0A722022352}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddSuffix", "AddSuffix\AddSuffix.csproj", "{C59EB2DC-B7B1-4A56-8588-6D779BEDCAA3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AddSuffix", "AddSuffix\AddSuffix.csproj", "{C59EB2DC-B7B1-4A56-8588-6D779BEDCAA3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

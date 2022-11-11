@@ -129,7 +129,10 @@
         },
         "runtime": {
           "bin/placeholder/AddCounter.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
       },
       "AddPrefix/1.0.0": {
         "type": "project",
@@ -142,7 +145,10 @@
         },
         "runtime": {
           "bin/placeholder/AddPrefix.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
       },
       "AddSuffix/1.0.0": {
         "type": "project",
@@ -155,7 +161,10 @@
         },
         "runtime": {
           "bin/placeholder/AddSuffix.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
       },
       "ChangeExtension/1.0.0": {
         "type": "project",
@@ -168,7 +177,10 @@
         },
         "runtime": {
           "bin/placeholder/ChangeExtension.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
       },
       "DeleteWhiteSpace/1.0.0": {
         "type": "project",
@@ -181,7 +193,10 @@
         },
         "runtime": {
           "bin/placeholder/DeleteWhiteSpace.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
       },
       "IRule/1.0.0": {
         "type": "project",
@@ -191,7 +206,10 @@
         },
         "runtime": {
           "bin/placeholder/IRule.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
       },
       "LowerCase/1.0.0": {
         "type": "project",
@@ -204,7 +222,10 @@
         },
         "runtime": {
           "bin/placeholder/LowerCase.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
       },
       "PascalCase/1.0.0": {
         "type": "project",
@@ -217,7 +238,10 @@
         },
         "runtime": {
           "bin/placeholder/PascalCase.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
       },
       "RemoveSpace/1.0.0": {
         "type": "project",
@@ -230,7 +254,10 @@
         },
         "runtime": {
           "bin/placeholder/RemoveSpace.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
       },
       "ReplaceCharaters/1.0.0": {
         "type": "project",
@@ -243,7 +270,10 @@
         },
         "runtime": {
           "bin/placeholder/ReplaceCharaters.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
       }
     }
   },

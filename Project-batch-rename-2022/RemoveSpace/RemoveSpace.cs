@@ -31,5 +31,15 @@ namespace RemoveSpace
         {
             return "Remove Space";
         }
+      
+        public bool isEditatble()
+        {
+            return false;
+        }
+
+        IRules? IRules.EditRule()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

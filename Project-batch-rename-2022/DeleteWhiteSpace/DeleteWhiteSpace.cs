@@ -38,7 +38,15 @@ namespace DeleteWhiteSpace
         public static string ruleName { get => "Remove White Space"; }
 
 
-
     
+        public bool isEditatble()
+        {
+            return false;
+        }
+
+        IRules? IRules.EditRule()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

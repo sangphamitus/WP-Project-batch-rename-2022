@@ -45,10 +45,21 @@ namespace PascalCase
         }
         public static string ruleName { get => "Pascal Case"; }
 
+    
+
+        public bool isEditatble()
+        {
+            return false;
+        }
 
         public override string ToString()
         {
             return "To PascalCase";
+        }
+
+        IRules? IRules.EditRule()
+        {
+            throw new NotImplementedException();
         }
     }
 }

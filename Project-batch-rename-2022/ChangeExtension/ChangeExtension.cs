@@ -35,6 +35,11 @@ namespace ChangeExtension
            
             return new ChangeExtension(data);
         }
+      
+        public bool isEditatble()
+        {
+            return true;
+        }
 
         public static string ruleName { get => "Change Extension"; }
 
@@ -43,6 +48,11 @@ namespace ChangeExtension
         public override string ToString()
         {
             return "Change Extension: " + this.extension;
+        }
+
+        IRules? IRules.EditRule()
+        {
+            throw new NotImplementedException();
         }
     }
 }

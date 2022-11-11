@@ -86,7 +86,8 @@ namespace Project_batch_rename_2022
       
             };
 
-            _ruleFactory.Inject(AddCounter.AddCounter.ruleName,new AddCounter.AddCounter());
+            _ruleFactory.Inject(AddCounter.AddCounterAsSuffix.ruleName,new AddCounter.AddCounterAsSuffix());
+            _ruleFactory.Inject(AddCounter.AddCounterAsPrefix.ruleName,new AddCounter.AddCounterAsPrefix());
             _ruleFactory.Inject(AddPrefix.AddPrefix.ruleName, new AddPrefix.AddPrefix());
             _ruleFactory.Inject(AddSuffix.AddSuffix.ruleName, new AddSuffix.AddSuffix());
             _ruleFactory.Inject(ChangeExtension.ChangeExtension.ruleName, new  ChangeExtension.ChangeExtension());
@@ -424,6 +425,19 @@ namespace Project_batch_rename_2022
             if (index == -1)
             {
                 MessageBox.Show("Invalid Rule");
+            }
+            else
+            {
+                if (_rulesList[index].isEditatble())
+                {
+                    _rulesList[index]= _rulesList[index].EditRule();
+                    applyChangeForRules();
+                }
+                else
+                {
+                    MessageBox.Show("This rule does not have any parameter to edit", "Error");
+
+                }
             }
         }
 

@@ -2,9 +2,9 @@
 
 namespace AddCounter
 {
-    public class AddCounter : IRules
+    public class AddCounterAsSuffix : IRules
     {
-        public AddCounter()
+        public AddCounterAsSuffix()
         {
             this.NumberOfDigit = 1;
             this.Step = 1;
@@ -33,7 +33,7 @@ namespace AddCounter
         }
         public override string ToString()
         {
-            return "Add Counter";
+            return "Add Counter As Suffix";
         }
 
         public void reset()
@@ -46,10 +46,21 @@ namespace AddCounter
       
         public IRules? parse(string data)
         {
-            return new AddCounter();
+            return new AddCounterAsSuffix();
+        }
+      
+
+        public bool isEditatble()
+        {
+            return false;
         }
 
-        public static string ruleName { get => "Add Counter"; }
+        IRules? IRules.EditRule()
+        {
+            throw new NotImplementedException();
+        }
+
+        public static string ruleName { get => "Add Counter As Suffix"; }
        
     }
 }

@@ -31,6 +31,16 @@ namespace LowerCase
             return new LowerCase();
         }
 
+       
+        public bool isEditatble()
+        {
+            return false;
+        }
+
+        IRules? IRules.EditRule()
+        {
+            throw new NotImplementedException();
+        }
 
         public static string ruleName { get => "Lower Case"; }
 
