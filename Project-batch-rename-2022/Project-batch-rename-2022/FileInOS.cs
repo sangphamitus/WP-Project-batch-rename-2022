@@ -10,6 +10,7 @@ namespace Project_batch_rename_2022
    interface FileChange
     {
         public string getType();
+        public int getStatus();
 
     }
 
@@ -19,7 +20,7 @@ namespace Project_batch_rename_2022
         
         public string NewFilename { get; set; }
         public string Pathname { get; set; }
-        public string Error { get; set; }
+        public string Result { get; set; }
 
         public string Type { get; set; }
         public int Status { get; set;}
@@ -34,6 +35,10 @@ namespace Project_batch_rename_2022
         public string getType()
         {
             return "File";
+        }
+        public int getStatus()
+        {
+            return this.Status;
         }
     }
 }
