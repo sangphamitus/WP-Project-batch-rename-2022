@@ -1,0 +1,15 @@
+D:\Destop\Windows\WP-Project-batch-rename-2022\Project-batch-rename-2022\AddPrefix\bin\Debug\net6.0-windows\AddPrefix.deps.json
+D:\Destop\Windows\WP-Project-batch-rename-2022\Project-batch-rename-2022\AddPrefix\bin\Debug\net6.0-windows\AddPrefix.dll
+D:\Destop\Windows\WP-Project-batch-rename-2022\Project-batch-rename-2022\AddPrefix\bin\Debug\net6.0-windows\AddPrefix.pdb
+D:\Destop\Windows\WP-Project-batch-rename-2022\Project-batch-rename-2022\AddPrefix\bin\Debug\net6.0-windows\IRule.dll
+D:\Destop\Windows\WP-Project-batch-rename-2022\Project-batch-rename-2022\AddPrefix\bin\Debug\net6.0-windows\IRule.pdb
+D:\Destop\Windows\WP-Project-batch-rename-2022\Project-batch-rename-2022\AddPrefix\obj\Debug\net6.0-windows\AddPrefix.csproj.AssemblyReference.cache
+D:\Destop\Windows\WP-Project-batch-rename-2022\Project-batch-rename-2022\AddPrefix\obj\Debug\net6.0-windows\AddPrefix.GeneratedMSBuildEditorConfig.editorconfig
+D:\Destop\Windows\WP-Project-batch-rename-2022\Project-batch-rename-2022\AddPrefix\obj\Debug\net6.0-windows\AddPrefix.AssemblyInfoInputs.cache
+D:\Destop\Windows\WP-Project-batch-rename-2022\Project-batch-rename-2022\AddPrefix\obj\Debug\net6.0-windows\AddPrefix.AssemblyInfo.cs
+D:\Destop\Windows\WP-Project-batch-rename-2022\Project-batch-rename-2022\AddPrefix\obj\Debug\net6.0-windows\AddPrefix.csproj.CoreCompileInputs.cache
+D:\Destop\Windows\WP-Project-batch-rename-2022\Project-batch-rename-2022\AddPrefix\obj\Debug\net6.0-windows\AddPrefix.csproj.CopyComplete
+D:\Destop\Windows\WP-Project-batch-rename-2022\Project-batch-rename-2022\AddPrefix\obj\Debug\net6.0-windows\AddPrefix.dll
+D:\Destop\Windows\WP-Project-batch-rename-2022\Project-batch-rename-2022\AddPrefix\obj\Debug\net6.0-windows\refint\AddPrefix.dll
+D:\Destop\Windows\WP-Project-batch-rename-2022\Project-batch-rename-2022\AddPrefix\obj\Debug\net6.0-windows\AddPrefix.pdb
+D:\Destop\Windows\WP-Project-batch-rename-2022\Project-batch-rename-2022\AddPrefix\obj\Debug\net6.0-windows\ref\AddPrefix.dll

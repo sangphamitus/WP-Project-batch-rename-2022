@@ -1,0 +1,15 @@
+D:\Destop\Windows\WP-Project-batch-rename-2022\Project-batch-rename-2022\RemoveSpace\bin\Debug\net6.0-windows\RemoveSpace.deps.json
+D:\Destop\Windows\WP-Project-batch-rename-2022\Project-batch-rename-2022\RemoveSpace\bin\Debug\net6.0-windows\RemoveSpace.dll
+D:\Destop\Windows\WP-Project-batch-rename-2022\Project-batch-rename-2022\RemoveSpace\bin\Debug\net6.0-windows\RemoveSpace.pdb
+D:\Destop\Windows\WP-Project-batch-rename-2022\Project-batch-rename-2022\RemoveSpace\bin\Debug\net6.0-windows\IRule.dll
+D:\Destop\Windows\WP-Project-batch-rename-2022\Project-batch-rename-2022\RemoveSpace\bin\Debug\net6.0-windows\IRule.pdb
+D:\Destop\Windows\WP-Project-batch-rename-2022\Project-batch-rename-2022\RemoveSpace\obj\Debug\net6.0-windows\RemoveSpace.csproj.AssemblyReference.cache
+D:\Destop\Windows\WP-Project-batch-rename-2022\Project-batch-rename-2022\RemoveSpace\obj\Debug\net6.0-windows\RemoveSpace.GeneratedMSBuildEditorConfig.editorconfig
+D:\Destop\Windows\WP-Project-batch-rename-2022\Project-batch-rename-2022\RemoveSpace\obj\Debug\net6.0-windows\RemoveSpace.AssemblyInfoInputs.cache
+D:\Destop\Windows\WP-Project-batch-rename-2022\Project-batch-rename-2022\RemoveSpace\obj\Debug\net6.0-windows\RemoveSpace.AssemblyInfo.cs
+D:\Destop\Windows\WP-Project-batch-rename-2022\Project-batch-rename-2022\RemoveSpace\obj\Debug\net6.0-windows\RemoveSpace.csproj.CoreCompileInputs.cache
+D:\Destop\Windows\WP-Project-batch-rename-2022\Project-batch-rename-2022\RemoveSpace\obj\Debug\net6.0-windows\RemoveSpace.csproj.CopyComplete
+D:\Destop\Windows\WP-Project-batch-rename-2022\Project-batch-rename-2022\RemoveSpace\obj\Debug\net6.0-windows\RemoveSpace.dll
+D:\Destop\Windows\WP-Project-batch-rename-2022\Project-batch-rename-2022\RemoveSpace\obj\Debug\net6.0-windows\refint\RemoveSpace.dll
+D:\Destop\Windows\WP-Project-batch-rename-2022\Project-batch-rename-2022\RemoveSpace\obj\Debug\net6.0-windows\RemoveSpace.pdb
+D:\Destop\Windows\WP-Project-batch-rename-2022\Project-batch-rename-2022\RemoveSpace\obj\Debug\net6.0-windows\ref\RemoveSpace.dll

@@ -1,0 +1,15 @@
+D:\Destop\Windows\WP-Project-batch-rename-2022\Project-batch-rename-2022\AddCounter\bin\Debug\net6.0-windows\AddCounter.deps.json
+D:\Destop\Windows\WP-Project-batch-rename-2022\Project-batch-rename-2022\AddCounter\bin\Debug\net6.0-windows\AddCounter.dll
+D:\Destop\Windows\WP-Project-batch-rename-2022\Project-batch-rename-2022\AddCounter\bin\Debug\net6.0-windows\AddCounter.pdb
+D:\Destop\Windows\WP-Project-batch-rename-2022\Project-batch-rename-2022\AddCounter\bin\Debug\net6.0-windows\IRule.dll
+D:\Destop\Windows\WP-Project-batch-rename-2022\Project-batch-rename-2022\AddCounter\bin\Debug\net6.0-windows\IRule.pdb
+D:\Destop\Windows\WP-Project-batch-rename-2022\Project-batch-rename-2022\AddCounter\obj\Debug\net6.0-windows\AddCounter.csproj.AssemblyReference.cache
+D:\Destop\Windows\WP-Project-batch-rename-2022\Project-batch-rename-2022\AddCounter\obj\Debug\net6.0-windows\AddCounter.GeneratedMSBuildEditorConfig.editorconfig
+D:\Destop\Windows\WP-Project-batch-rename-2022\Project-batch-rename-2022\AddCounter\obj\Debug\net6.0-windows\AddCounter.AssemblyInfoInputs.cache
+D:\Destop\Windows\WP-Project-batch-rename-2022\Project-batch-rename-2022\AddCounter\obj\Debug\net6.0-windows\AddCounter.AssemblyInfo.cs
+D:\Destop\Windows\WP-Project-batch-rename-2022\Project-batch-rename-2022\AddCounter\obj\Debug\net6.0-windows\AddCounter.csproj.CoreCompileInputs.cache
+D:\Destop\Windows\WP-Project-batch-rename-2022\Project-batch-rename-2022\AddCounter\obj\Debug\net6.0-windows\AddCounter.csproj.CopyComplete
+D:\Destop\Windows\WP-Project-batch-rename-2022\Project-batch-rename-2022\AddCounter\obj\Debug\net6.0-windows\AddCounter.dll
+D:\Destop\Windows\WP-Project-batch-rename-2022\Project-batch-rename-2022\AddCounter\obj\Debug\net6.0-windows\refint\AddCounter.dll
+D:\Destop\Windows\WP-Project-batch-rename-2022\Project-batch-rename-2022\AddCounter\obj\Debug\net6.0-windows\AddCounter.pdb
+D:\Destop\Windows\WP-Project-batch-rename-2022\Project-batch-rename-2022\AddCounter\obj\Debug\net6.0-windows\ref\AddCounter.dll

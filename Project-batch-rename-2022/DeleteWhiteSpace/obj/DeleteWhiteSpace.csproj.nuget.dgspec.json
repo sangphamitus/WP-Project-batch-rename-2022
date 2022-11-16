@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\DeleteWhiteSpace\\DeleteWhiteSpace.csproj": {}
+    "D:\\Destop\\Windows\\WP-Project-batch-rename-2022\\Project-batch-rename-2022\\DeleteWhiteSpace\\DeleteWhiteSpace.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\DeleteWhiteSpace\\DeleteWhiteSpace.csproj": {
+    "D:\\Destop\\Windows\\WP-Project-batch-rename-2022\\Project-batch-rename-2022\\DeleteWhiteSpace\\DeleteWhiteSpace.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\DeleteWhiteSpace\\DeleteWhiteSpace.csproj",
+        "projectUniqueName": "D:\\Destop\\Windows\\WP-Project-batch-rename-2022\\Project-batch-rename-2022\\DeleteWhiteSpace\\DeleteWhiteSpace.csproj",
         "projectName": "DeleteWhiteSpace",
-        "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\DeleteWhiteSpace\\DeleteWhiteSpace.csproj",
-        "packagesPath": "C:\\Users\\Sang\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\DeleteWhiteSpace\\obj\\",
+        "projectPath": "D:\\Destop\\Windows\\WP-Project-batch-rename-2022\\Project-batch-rename-2022\\DeleteWhiteSpace\\DeleteWhiteSpace.csproj",
+        "packagesPath": "C:\\Users\\HAI YEN\\.nuget\\packages\\",
+        "outputPath": "D:\\Destop\\Windows\\WP-Project-batch-rename-2022\\Project-batch-rename-2022\\DeleteWhiteSpace\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Sang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HAI YEN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj": {
-                "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj"
+              "D:\\Destop\\Windows\\WP-Project-batch-rename-2022\\Project-batch-rename-2022\\IRule\\IRule.csproj": {
+                "projectPath": "D:\\Destop\\Windows\\WP-Project-batch-rename-2022\\Project-batch-rename-2022\\IRule\\IRule.csproj"
               }
             }
           }
@@ -62,21 +62,21 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj": {
+    "D:\\Destop\\Windows\\WP-Project-batch-rename-2022\\Project-batch-rename-2022\\IRule\\IRule.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj",
+        "projectUniqueName": "D:\\Destop\\Windows\\WP-Project-batch-rename-2022\\Project-batch-rename-2022\\IRule\\IRule.csproj",
         "projectName": "IRule",
-        "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj",
-        "packagesPath": "C:\\Users\\Sang\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\obj\\",
+        "projectPath": "D:\\Destop\\Windows\\WP-Project-batch-rename-2022\\Project-batch-rename-2022\\IRule\\IRule.csproj",
+        "packagesPath": "C:\\Users\\HAI YEN\\.nuget\\packages\\",
+        "outputPath": "D:\\Destop\\Windows\\WP-Project-batch-rename-2022\\Project-batch-rename-2022\\IRule\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Sang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HAI YEN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -120,7 +120,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
