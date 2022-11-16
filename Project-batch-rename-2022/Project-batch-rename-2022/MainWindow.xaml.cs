@@ -566,7 +566,21 @@ namespace Project_batch_rename_2022
             applyChangeForRules();
         }
 
+        private void moveRuleToBottom(object sender, RoutedEventArgs e)
+        {
+            int index = chosenRulesListView.SelectedIndex;
+            if(index != _rulesList.Count - 1)
+            {
+                var tmp = _rulesList[index];
+                for (var i = index; i < _rulesList.Count - 1; i++)
+                {
+                    _rulesList[i] = _rulesList[i + 1];
+                }
+                _rulesList[_rulesList.Count - 1] = tmp;
 
+                applyChangeForRules();
+            }
+        }
 
         private void NewProjectBtnClick(object sender, RoutedEventArgs e)
         {
@@ -1120,5 +1134,6 @@ namespace Project_batch_rename_2022
         {
             _fullList.RemoveAt(ItemListView.SelectedIndex);
         }
+
     }
 }
