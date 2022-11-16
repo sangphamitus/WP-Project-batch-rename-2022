@@ -117,6 +117,163 @@
             "related": ".xml"
           }
         }
+      },
+      "AddCounter/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "IRule": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AddCounter.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AddCounter.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
+      "AddPrefix/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "IRule": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AddPrefix.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AddPrefix.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
+      "AddSuffix/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "IRule": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AddSuffix.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AddSuffix.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
+      "ChangeExtension/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "IRule": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ChangeExtension.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ChangeExtension.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
+      "DeleteWhiteSpace/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "IRule": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DeleteWhiteSpace.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DeleteWhiteSpace.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
+      "IRule/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/IRule.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/IRule.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
+      "LowerCase/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "IRule": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/LowerCase.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LowerCase.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
+      "PascalCase/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "IRule": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PascalCase.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PascalCase.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
+      "RemoveSpace/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "IRule": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/RemoveSpace.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RemoveSpace.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
+      "ReplaceCharaters/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "IRule": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ReplaceCharaters.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ReplaceCharaters.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
       }
     }
   },
@@ -301,13 +458,73 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "AddCounter/1.0.0": {
+      "type": "project",
+      "path": "../AddCounter/AddCounter.csproj",
+      "msbuildProject": "../AddCounter/AddCounter.csproj"
+    },
+    "AddPrefix/1.0.0": {
+      "type": "project",
+      "path": "../AddPrefix/AddPrefix.csproj",
+      "msbuildProject": "../AddPrefix/AddPrefix.csproj"
+    },
+    "AddSuffix/1.0.0": {
+      "type": "project",
+      "path": "../AddSuffix/AddSuffix.csproj",
+      "msbuildProject": "../AddSuffix/AddSuffix.csproj"
+    },
+    "ChangeExtension/1.0.0": {
+      "type": "project",
+      "path": "../ChangeExtension/ChangeExtension.csproj",
+      "msbuildProject": "../ChangeExtension/ChangeExtension.csproj"
+    },
+    "DeleteWhiteSpace/1.0.0": {
+      "type": "project",
+      "path": "../DeleteWhiteSpace/DeleteWhiteSpace.csproj",
+      "msbuildProject": "../DeleteWhiteSpace/DeleteWhiteSpace.csproj"
+    },
+    "IRule/1.0.0": {
+      "type": "project",
+      "path": "../IRule/IRule.csproj",
+      "msbuildProject": "../IRule/IRule.csproj"
+    },
+    "LowerCase/1.0.0": {
+      "type": "project",
+      "path": "../LowerCase/LowerCase.csproj",
+      "msbuildProject": "../LowerCase/LowerCase.csproj"
+    },
+    "PascalCase/1.0.0": {
+      "type": "project",
+      "path": "../PascalCase/PascalCase.csproj",
+      "msbuildProject": "../PascalCase/PascalCase.csproj"
+    },
+    "RemoveSpace/1.0.0": {
+      "type": "project",
+      "path": "../RemoveSpace/RemoveSpace.csproj",
+      "msbuildProject": "../RemoveSpace/RemoveSpace.csproj"
+    },
+    "ReplaceCharaters/1.0.0": {
+      "type": "project",
+      "path": "../ReplaceCharaters/ReplaceCharaters.csproj",
+      "msbuildProject": "../ReplaceCharaters/ReplaceCharaters.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
+      "AddCounter >= 1.0.0",
+      "AddPrefix >= 1.0.0",
+      "AddSuffix >= 1.0.0",
+      "ChangeExtension >= 1.0.0",
+      "DeleteWhiteSpace >= 1.0.0",
       "Fluent.Ribbon >= 9.0.4",
+      "IRule >= 1.0.0",
+      "LowerCase >= 1.0.0",
       "Microsoft.WindowsAPICodePack-Shell >= 1.1.0",
-      "PropertyChanged.Fody >= 4.0.5"
+      "PascalCase >= 1.0.0",
+      "PropertyChanged.Fody >= 4.0.5",
+      "RemoveSpace >= 1.0.0",
+      "ReplaceCharaters >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -336,7 +553,38 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\AddCounter\\AddCounter.csproj": {
+              "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\AddCounter\\AddCounter.csproj"
+            },
+            "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\AddPrefix\\AddPrefix.csproj": {
+              "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\AddPrefix\\AddPrefix.csproj"
+            },
+            "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\AddSuffix\\AddSuffix.csproj": {
+              "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\AddSuffix\\AddSuffix.csproj"
+            },
+            "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\ChangeExtension\\ChangeExtension.csproj": {
+              "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\ChangeExtension\\ChangeExtension.csproj"
+            },
+            "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\DeleteWhiteSpace\\DeleteWhiteSpace.csproj": {
+              "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\DeleteWhiteSpace\\DeleteWhiteSpace.csproj"
+            },
+            "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj": {
+              "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj"
+            },
+            "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\LowerCase\\LowerCase.csproj": {
+              "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\LowerCase\\LowerCase.csproj"
+            },
+            "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\PascalCase\\PascalCase.csproj": {
+              "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\PascalCase\\PascalCase.csproj"
+            },
+            "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\RemoveSpace\\RemoveSpace.csproj": {
+              "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\RemoveSpace\\RemoveSpace.csproj"
+            },
+            "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\ReplaceCharaters\\ReplaceCharaters.csproj": {
+              "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\ReplaceCharaters\\ReplaceCharaters.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

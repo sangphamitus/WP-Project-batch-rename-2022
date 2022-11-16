@@ -6,52 +6,54 @@
         xmlns:Fluent="clr-namespace:Fluent;assembly=Fluent"
         xmlns:local="clr-namespace:Project_batch_rename_2022"
         mc:Ignorable="d"
-        Title="BatchRename" Height="650" Width="1000" Loaded="Window_Loaded">
-
+        Title="BatchRename" Height="650" Width="1150" Loaded="Window_Loaded">
+  
     <StackPanel Orientation="Vertical">
         <Fluent:Ribbon>
             <Fluent:RibbonTabItem Header="Home">
                 <Fluent:RibbonGroupBox Header="Project">
-                    <Fluent:Button  Icon="icons/new-project.png" LargeIcon="icons/new-project.png" Padding="4, 4, 4, 0"  Header="New"/>
-                    <Fluent:Button Icon="icons/open-project.png" LargeIcon="icons/open-project.png" Padding="4, 4, 4, 0"  Header="Open" />
-                    <Fluent:Button Icon="icons/save-project.png" LargeIcon="icons/save-project.png" Padding="4, 4, 4, 0"  Header="Save" />
+                    <Fluent:Button  Icon="icons/new-project.png" LargeIcon="icons/new-project.png" Padding="4, 4, 4, 0"  Header="New" Click="NewProjectBtnClick"/>
+                    <Fluent:Button Icon="icons/open-project.png" LargeIcon="icons/open-project.png" Padding="4, 4, 4, 0"  Header="Open" Click="OpenProjectBtnClick" />
+                    <Fluent:Button Icon="icons/save-project.png" LargeIcon="icons/save-project.png" Padding="4, 4, 4, 0"  Header="Save" Click="SaveProjectBtnClick"/>
                 </Fluent:RibbonGroupBox>
                 <Fluent:RibbonGroupBox Header="Preset">
-                    <Fluent:Button Icon="icons/open.png" LargeIcon="icons/open.png" Padding="4, 4, 4, 0"  Header="Open" />
-                    <Fluent:Button Icon="icons/save.png" LargeIcon="icons/save.png" Padding="4, 4, 4, 0" Header="Save"/>
+                    <Fluent:Button Icon="icons/open.png" LargeIcon="icons/open.png" Padding="4, 4, 4, 0"  Header="Open" Click="OpenPresetBtnClick" />
+                    <Fluent:Button Icon="icons/save.png" LargeIcon="icons/save.png" Padding="4, 4, 4, 0" Header="Save" Click="SavePresetBtnClick"/>
                 </Fluent:RibbonGroupBox>
                 <Fluent:RibbonGroupBox Header="Rename Rules">
                     <Fluent:ComboBox x:Name="rulesComboBox"  Width="150" Height="25" Margin="0, 12, 0, 0" Text="-- Choose a rule --">
-                        <Fluent:ComboBox.ItemTemplate>
-                            <DataTemplate>
-                                <TextBlock Text="choose"/>
-                            </DataTemplate>
-                        </Fluent:ComboBox.ItemTemplate>
-                    </Fluent:ComboBox>
-                    <Fluent:Button Icon="icons/add-rule.png" LargeIcon="icons/add-rule.png" Padding="4, 4, 4, 0"  Header="Add Rules"
-                                 />
-
-                    <Fluent:Button Header="Reset Rules"
-                                   Icon="icons/reset-rule.png" LargeIcon="icons/reset-rule.png" Padding="4, 4, 4, 0" Click="Button_Click_1" 
-                                 />
-                </Fluent:RibbonGroupBox>
-                <Fluent:RibbonGroupBox Header="Items Actions">
-                    <Fluent:ComboBox Name="typeComboBox" Width="150" Height="25" Margin="0, 12, 0, 0" Text="-- Choose items type --"
-                                     DropDownClosed="typeComboBox_DropDownClosed">
                         <Fluent:ComboBox.ItemTemplate>
                             <DataTemplate>
                                 <TextBlock Text="{Binding}"/>
                             </DataTemplate>
                         </Fluent:ComboBox.ItemTemplate>
                     </Fluent:ComboBox>
+                    <Fluent:Button Icon="icons/add-rule.png" LargeIcon="icons/add-rule.png" Padding="4, 4, 4, 0"  Header="Add Rules"
+                                   Click="addRuleBtnClick"
+                                 />
+
+                    <Fluent:Button Header="Reset Rules"
+                                   Icon="icons/reset-rule.png" LargeIcon="icons/reset-rule.png" Padding="4, 4, 4, 0" Click="resetRuleBtnClick" 
+                                 />
+                </Fluent:RibbonGroupBox>
+                <Fluent:RibbonGroupBox Header="Items Actions">
+                    <Fluent:ComboBox Name="typeComboBox" Width="289" Height="25" Margin="0, 12, 0, 0"  HorizontalAlignment="Center" Text="-- Choose items type --"
+                                     DropDownClosed="typeComboBox_DropDownClosed" SelectionChanged="typeComboBox_SelectionChanged">
+                        <Fluent:ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding}" HorizontalAlignment="Center" />
+                            </DataTemplate>
+                        </Fluent:ComboBox.ItemTemplate>
+                    </Fluent:ComboBox>
 
                     <Fluent:Button Header="Add Items" Icon="icons/add-items.png" LargeIcon="icons/add-items.png"  Padding="4, 4, 4, 0" Click="addItems" />
-               
+                    <Fluent:Button Header="Resets Item List" Icon="icons/reset-rule.png" LargeIcon="icons/reset-rule.png"  Padding="4, 4, 4, 0" Click="resetItems" />
+
 
                 </Fluent:RibbonGroupBox>
                 <Fluent:RibbonGroupBox Header="Batch Actions">
-                    <Fluent:Button Header="Preview" Icon="icons/preview.png" LargeIcon="icons/preview.png"  Padding="4, 4, 4, 0" />
-                    <Fluent:Button Header="Start"  Icon="icons/start.png" LargeIcon="icons/start.png" Padding="4, 4, 4, 0" />
+                    <!--<Fluent:Button Header="Preview" Icon="icons/preview.png" LargeIcon="icons/preview.png"  Padding="4, 4, 4, 0" />-->
+                    <Fluent:Button Header="Start"  Icon="icons/start.png" LargeIcon="icons/start.png" Padding="4, 4, 4, 0" Click="StartBtnClick"/>
                 </Fluent:RibbonGroupBox>
             </Fluent:RibbonTabItem>
             <Fluent:RibbonTabItem Header="Options">
@@ -59,14 +61,15 @@
                     <Fluent:ComboBox Name="conflictComboBox" Width="150" Height="25" Margin="0, 12, 4, 0" Text="-- Choose an action --">
                         <Fluent:ComboBox.ItemTemplate>
                             <DataTemplate>
-                                <TextBlock Text="Option"/>
+                                <TextBlock Text="{Binding}"/>
                             </DataTemplate>
                         </Fluent:ComboBox.ItemTemplate>
                     </Fluent:ComboBox>
                 </Fluent:RibbonGroupBox>
                 <Fluent:RibbonGroupBox Header="Batch Actions">
-                    <Fluent:RadioButton Name="renameOriginal" Header="Rename On Originals" Margin="0, 8, 0, 0" IsChecked="True"/>
+                    <Fluent:RadioButton Name="renameOriginal" Header="Rename On Originals" Margin="0, 8, 0, 0" />
                     <Fluent:RadioButton Name="moveToNew" Header="Move To New Folder"/>
+                    <Fluent:RadioButton Name="copyToNew" Header="Copy To New Folder" IsChecked="True"/>
                 </Fluent:RibbonGroupBox>
             </Fluent:RibbonTabItem>
 
@@ -104,44 +107,80 @@
                             <ToolTip Content="Move Rule To Bottom"/>
                         </Button.ToolTip>
                     </Button>
-                    <Button Width="40" Height="30" Margin="0,4,0,4" Background="Transparent" BorderThickness="0">
+                    <Button Width="40" Height="30" Margin="0,4,0,4" Background="Transparent" BorderThickness="0" Click="removeRuleBtnClick">
                         <Image Source="icons/delete.png" RenderOptions.BitmapScalingMode="HighQuality"/>
                         <Button.ToolTip>
                             <ToolTip Content="Delete Chosen Rule"/>
                         </Button.ToolTip>
                     </Button>
                 </StackPanel>
-                <ListView Name="chosenRulesListView" Width="200" Height="440" Margin="8,0,0,0">
+                <ListView Name="chosenRulesListView" Width="200" Height="440" Margin="8,0,0,0" SelectionChanged="chosenRulesListView_SelectionChanged">
                     <ListView.Resources>
                         <ContextMenu x:Key="ChosenRuleContextMenu">
-                            <MenuItem Header="Edit Parameters" />
-                            <MenuItem Header="Remove This Rule" />
+                            <MenuItem Header="Edit Parameters" Click="EditRules"/>
+                            <MenuItem Header="Remove This Rule" Click="DeleteRules"/>
                         </ContextMenu>
                     </ListView.Resources>
                     <ListView.ItemTemplate>
                         <DataTemplate>
-                            <TextBlock Text="Style goes here" VerticalAlignment="Center"/>
+                            <TextBlock Text="{Binding}" VerticalAlignment="Center"/>
                         </DataTemplate>
                     </ListView.ItemTemplate>
-                 
+                    <ListView.ItemContainerStyle>
+                        <Style TargetType="{x:Type ListViewItem}" >
+                            <Setter Property="ContextMenu" Value="{StaticResource ChosenRuleContextMenu}" />
+                            <EventSetter Event="MouseDoubleClick" Handler="ChosenRule_DoubleClick" />
+                        </Style>
+                    </ListView.ItemContainerStyle>
                 </ListView>
                 
             </StackPanel>
             <StackPanel Margin="8, 0, 8, 0">
                 <Label Content="Chosen Item(s)" Margin="8,0,0,0"/>
-                <ListView Name="ItemListView" Height="478" Width="720" VerticalAlignment="Top"
-                          Drop="ItemsDrop" AllowDrop="True">
+                <ListView Name="ItemListView" Height="478" Width="900" VerticalAlignment="Top"
+                          Drop="ItemsDrop" AllowDrop="True" SelectionChanged="ItemListView_SelectionChanged">
                     <ListView.Resources>
                         <ContextMenu x:Key="ItemContextMenu">
-                            <MenuItem Header="Remove"/>
+                            <MenuItem Header="Remove" Click="removeFileFolder"/>
                         </ContextMenu>
+
                     </ListView.Resources>
+                    <ListView.ItemContainerStyle>
+                        <Style TargetType="{x:Type ListViewItem}">
+                            <Setter Property="ContextMenu" Value="{StaticResource ItemContextMenu}" />
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding Type}" Value="File">
+                                    <Setter Property="Background" Value="#CDFCF6"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding Type}" Value="Folder">
+                                    <Setter Property="Background" Value="#FFF5E4"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding Type}" Value="">
+                                    <Setter Property="Background" Value="White"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding Status}" Value="0">
+                                    <Setter Property="Background" Value="White"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding Status}" Value="1">
+                                    <Setter Property="Background" Value="#B6E2A1"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding Status}" Value="2">
+                                    <Setter Property="Background" Value="#FF8787"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding Status}" Value="-1">
+                                    <Setter Property="Background" Value="#D6EFED"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </ListView.ItemContainerStyle>
+                    
                     <ListView.View>
                         <GridView>
-                            <GridViewColumn Header="Filename" Width="150" DisplayMemberBinding="{Binding Filename}"/>
+                            <GridViewColumn Header="Filename"  Width="150" DisplayMemberBinding="{Binding Filename}"/>
                             <GridViewColumn Header="New Filename" Width="150" DisplayMemberBinding="{Binding NewFilename}"/>
-                            <GridViewColumn Header="Path" Width="160" DisplayMemberBinding="{Binding Pathname}"/>
-                            <GridViewColumn Header="Error" Width="200"  DisplayMemberBinding="{Binding Error}"/>
+                            <GridViewColumn Header="Type" Width="90" DisplayMemberBinding="{Binding Type}"/>
+                            <GridViewColumn Header="Path" Width="200" DisplayMemberBinding="{Binding Pathname}"/>
+                            <GridViewColumn Header="Result" Width="200"  DisplayMemberBinding="{Binding Result}"/>
                             <GridViewColumn Header="Status" Width="45"  DisplayMemberBinding="{Binding Status}"/>
                        
                         </GridView>

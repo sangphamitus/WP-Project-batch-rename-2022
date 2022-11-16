@@ -7,14 +7,22 @@ using System.Threading.Tasks;
 
 namespace Project_batch_rename_2022
 {
-    internal class FileInOS:INotifyPropertyChanged,ICloneable
+   interface FileChange
+    {
+        public string getType();
+        public int getStatus();
+
+    }
+
+    internal class FileInOS:INotifyPropertyChanged,ICloneable,FileChange
     {
         public string Filename { get; set; }
         
         public string NewFilename { get; set; }
         public string Pathname { get; set; }
-        public string Error { get; set; }
+        public string Result { get; set; }
 
+        public string Type { get; set; }
         public int Status { get; set;}
 
         public event PropertyChangedEventHandler? PropertyChanged;
@@ -22,6 +30,15 @@ namespace Project_batch_rename_2022
         public object Clone()
         {
             return MemberwiseClone();
+        }
+
+        public string getType()
+        {
+            return "File";
+        }
+        public int getStatus()
+        {
+            return this.Status;
         }
     }
 }
