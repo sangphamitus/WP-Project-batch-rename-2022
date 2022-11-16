@@ -254,42 +254,57 @@ namespace Project_batch_rename_2022
                 if (System.Windows.Forms.DialogResult.OK == result)
                 {
                     // ItemListView.ItemsSource = _folders;
-
-                    string path = dialog.SelectedPath + "\\";
-                    string[] folders = Directory.GetDirectories(path);
-                    List<FolderInOS> newFoldernames = new List<FolderInOS>();
-
-                    foreach (var folder in folders)
+                    string path = dialog.SelectedPath ;
+                    if (_fullList.Where(X => X.getType() == "Folder" && ((FolderInOS)X)!.Pathname == dialog.SelectedPath).FirstOrDefault() == null)
                     {
-                        bool isExisted = false;
-                        string currentName = folder.Remove(0, path.Length);
-
-                        foreach (var foldername in _folders)
+                        counter++;
+                        _fullList.Add(new FileInOS
                         {
-                            if (foldername.Filename == currentName && foldername.Pathname == path)
-                            {
-                                isExisted = true;
-                                break;
-                            }
-                        }
+                            Filename = Path.GetDirectoryName(path),
+                            NewFilename = Path.GetDirectoryName(path),
+                            Pathname =path,
+                            Type = "Folder",
+                            Result = "",
+                            Status = 0
+                        });
+                    }
+                  
+                    
+                    //string path = dialog.SelectedPath + "\\";
+                    //string[] folders = Directory.GetDirectories(path);
+                    //List<FolderInOS> newFoldernames = new List<FolderInOS>();
 
-                        if (!isExisted)
-                        {
-                            newFoldernames.Add(new FolderInOS()
-                            {
-                                Filename = currentName,
-                                NewFilename = currentName,
-                                Pathname = path + currentName,
-                                Type = "Folder"
-                            });
-                            counter++;
-                        }
-                    }
-                    foreach (var newFoldername in newFoldernames)
-                    {
-                        _fullList.Add(newFoldername);
-                        _folders.Add(newFoldername);
-                    }
+                    //foreach (var folder in folders)
+                    //{
+                    //    bool isExisted = false;
+                    //    string currentName = folder.Remove(0, path.Length);
+
+                    //    foreach (var foldername in _folders)
+                    //    {
+                    //        if (foldername.Filename == currentName && foldername.Pathname == path)
+                    //        {
+                    //            isExisted = true;
+                    //            break;
+                    //        }
+                    //    }
+
+                    //    if (!isExisted)
+                    //    {
+                    //        newFoldernames.Add(new FolderInOS()
+                    //        {
+                    //            Filename = currentName,
+                    //            NewFilename = currentName,
+                    //            Pathname = path + currentName,
+                    //            Type = "Folder"
+                    //        });
+                    //        counter++;
+                    //    }
+                    //}
+                    //foreach (var newFoldername in newFoldernames)
+                    //{
+                    //    _fullList.Add(newFoldername);
+                    //    _folders.Add(newFoldername);
+                    //}
 
                     MessageBox.Show(counter + " folder(s) Added Successfully", "Success");
                 }
@@ -475,7 +490,7 @@ namespace Project_batch_rename_2022
             }
             else
             {
-                _rulesList.Add(_ruleFactory.rules(rulesComboBox.SelectedItem.ToString()));
+                _rulesList.Add(_ruleFactory.rules(rulesComboBox.SelectedItem.ToString()).parse(""));
             }
 
             applyChangeForRules();
@@ -526,13 +541,13 @@ namespace Project_batch_rename_2022
 
             }
         }
-        private string applyChangeOnFile(string filename)
+        private string applyChangeOnFile(string filename,string type)
         {
             string res = filename;
             foreach (IRules rule in _rulesList)
             {
 
-                res = rule.applyRule(res);
+                res = rule.applyRule(res,type);
             }
             return res;
         }
@@ -624,7 +639,7 @@ namespace Project_batch_rename_2022
                             ((FileInOS)item).Result = "File not available";
                         }
 
-                        ((FileInOS)item).NewFilename = applyChangeOnFile(((FileInOS)item).Filename);
+                        ((FileInOS)item).NewFilename = applyChangeOnFile(((FileInOS)item).Filename,"File");
                         break;
 
                     case "Folder":
@@ -636,7 +651,7 @@ namespace Project_batch_rename_2022
                             ((FolderInOS)item).Result = "Folder not available";
                         }
 
-                        ((FolderInOS)item).NewFilename = applyChangeOnFile(((FolderInOS)item).Filename);
+                        ((FolderInOS)item).NewFilename = applyChangeOnFile(((FolderInOS)item).Filename,"Folder");
                         break;
                 }
 

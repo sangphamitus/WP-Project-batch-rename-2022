@@ -105,7 +105,7 @@ namespace AddSuffix
             this._suffix = suf;
         }
 
-        public string applyRule(string filename)
+        public string applyRule(string filename, string type)
         {
             string[] parts = filename.Split('.');
             filename = parts[0]  + this._suffix + "."+ parts[1];

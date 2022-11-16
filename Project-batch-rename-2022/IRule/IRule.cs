@@ -8,12 +8,13 @@ namespace IRule
     {
         public static string ruleName { get; }
 
-        string applyRule(string filename);
+        string applyRule(string filename,string type);
         IRules? parse(string data);
         void reset();
         public IRules? EditRule();
 
         public  bool isEditatble();
+     
  
     }
     public interface IRuleEdit

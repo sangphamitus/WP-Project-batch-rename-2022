@@ -108,7 +108,7 @@ namespace AddPrefix
             this._prefix = pre;
         }
        
-        public string applyRule(string filename)
+        public string applyRule(string filename, string type)
         {
             filename = this._prefix + filename;
             return filename;

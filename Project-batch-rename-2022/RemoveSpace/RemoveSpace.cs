@@ -8,7 +8,7 @@ namespace RemoveSpace
         {
         }
 
-        public string applyRule(string filename)
+        public string applyRule(string filename,string type)
         {
             string[] parts = filename.Split('.');
 

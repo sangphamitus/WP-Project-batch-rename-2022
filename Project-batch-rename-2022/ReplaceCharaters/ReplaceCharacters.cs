@@ -24,11 +24,12 @@ namespace ReplaceCharaters
         {
 
             // [oldchar]\\[newchar]
+            if(data=="")return new ReplaceCharacters();
             string[] parts = data.Split('\\');
             return new ReplaceCharacters(parts[0], parts[1]);
         }
 
-        public string applyRule(string filename)
+        public string applyRule(string filename,string type)
         {
             if (this._newChar == ".") return filename;
             string[] parts = filename.Split('.');

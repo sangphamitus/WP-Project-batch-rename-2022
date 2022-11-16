@@ -16,8 +16,9 @@ namespace ChangeExtension
 
         public string extension { get; set; }
   
-        public string applyRule(string filename)
+        public string applyRule(string filename, string type)
         {
+            if(type=="Folder") return filename;
             string[] parts = filename.Split('.');
             string result = parts[0];
             if (parts.Length > 1) result = result + "." + this.extension;

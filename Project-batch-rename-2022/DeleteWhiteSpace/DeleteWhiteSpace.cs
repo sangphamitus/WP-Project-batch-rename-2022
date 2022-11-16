@@ -8,7 +8,7 @@ namespace DeleteWhiteSpace
         {
         
         }
-        public string applyRule(string filename)
+        public string applyRule(string filename, string type)
         {
             String result = "";
             for (int i = 0; i < filename.Length; i++)
