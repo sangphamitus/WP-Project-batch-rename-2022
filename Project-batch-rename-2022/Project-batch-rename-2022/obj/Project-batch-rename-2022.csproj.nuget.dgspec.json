@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "D:\\Destop\\Windows\\WP-Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022.csproj": {}
   },
   "projects": {
@@ -325,6 +326,22 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HAI YEN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+    "D:\\Destop\\win\\WP-Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022.csproj": {}
+  },
+  "projects": {
+    "D:\\Destop\\win\\WP-Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Destop\\win\\WP-Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022.csproj",
+        "projectName": "Project-batch-rename-2022",
+        "projectPath": "D:\\Destop\\win\\WP-Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022.csproj",
+        "packagesPath": "C:\\Users\\HAI YEN\\.nuget\\packages\\",
+        "outputPath": "D:\\Destop\\win\\WP-Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\HAI YEN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 4db08281b640af4978f16cf6215023e37ec0b5cd
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -596,6 +613,7 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+<<<<<<< HEAD
         }
       }
     },
@@ -720,6 +738,8 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+=======
+>>>>>>> 4db08281b640af4978f16cf6215023e37ec0b5cd
         }
       }
     }

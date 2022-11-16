@@ -533,11 +533,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "D:\\Destop\\Windows\\WP-Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022.csproj",
       "projectName": "Project-batch-rename-2022",
       "projectPath": "D:\\Destop\\Windows\\WP-Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022.csproj",
       "packagesPath": "C:\\Users\\HAI YEN\\.nuget\\packages\\",
       "outputPath": "D:\\Destop\\Windows\\WP-Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022\\obj\\",
+=======
+      "projectUniqueName": "D:\\Destop\\win\\WP-Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022.csproj",
+      "projectName": "Project-batch-rename-2022",
+      "projectPath": "D:\\Destop\\win\\WP-Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022.csproj",
+      "packagesPath": "C:\\Users\\HAI YEN\\.nuget\\packages\\",
+      "outputPath": "D:\\Destop\\win\\WP-Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022\\obj\\",
+>>>>>>> 4db08281b640af4978f16cf6215023e37ec0b5cd
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HAI YEN\\AppData\\Roaming\\NuGet\\NuGet.Config",
