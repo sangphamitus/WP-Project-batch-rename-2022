@@ -1,5 +1,6 @@
 ﻿using IRule;
 using System;
+using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -67,8 +68,18 @@ namespace AddSuffix
             string str = editTxtBox.Text;
             if (str.Length != 0)
             {
-                ((AddSuffix)currentRule).setSuffix(str);
-                DialogResult = true;
+                Regex reg = new Regex("^[ \\.\\w-$()+=[\\];#@~,&']+$");
+
+                if (reg.Match(str).Success)
+                {
+                    ((AddSuffix)currentRule).setSuffix(str);
+                    DialogResult = true;
+                }
+                else
+                {
+                    MessageBox.Show("New suffix is invalid!");
+                }
+               
             }
         }
         public IRules getCurrentRule()

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -84,10 +85,20 @@ namespace ReplaceCharacters
         {
             string str = editTxtBox.Text;
             string newC = replaceTxtBox.Text;
-            if (str.Length != 0 && newC!="")
+            if (str.Length != 0 )
             {
-                ((ReplaceCharacters)currentRule).set(str,newC);
-                DialogResult = true;
+                Regex reg = new Regex("^[ \\.\\w-$()+=[\\];#@~,&']$");
+
+                if (reg.Match(newC).Success)
+                {
+                    ((ReplaceCharacters)currentRule).set(str, newC);
+                    DialogResult = true;
+                }
+                else
+                {
+                    MessageBox.Show("New characters is invalid!");
+                }
+               
             }
         }
         public IRules getCurrentRule()

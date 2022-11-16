@@ -69,17 +69,22 @@ namespace ChangeExtension
         private void OnSubmitButtonClick(object sender, RoutedEventArgs e)
         {
             string str = editTxtBox.Text;
-            Regex reg = new Regex("\\W+");
+            
             if (str.Length != 0 )
-            { if (reg.Match(str).Success)
-                {
-                    MessageBox.Show("Invalid extention!");
-                }
-                else
+
+            {
+                Regex reg = new Regex("^[ \\.\\w-$()+=[\\];#@~,&']+$");
+
+                if (reg.Match(str).Success)
                 {
                     ((ChangeExtension)currentRule).setPrefix(str);
                     DialogResult = true;
                 }
+                else
+                {
+                    MessageBox.Show("New extension is invalid!");
+                }
+                                
             }
         }
         public IRules getCurrentRule()
