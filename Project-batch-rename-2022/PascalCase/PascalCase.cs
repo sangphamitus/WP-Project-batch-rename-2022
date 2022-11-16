@@ -14,7 +14,7 @@ namespace PascalCase
 
 
    
-        public string applyRule(string filename)
+        public string applyRule(string filename,string type)
         {
             string[] parts = filename.Split('.');
             Regex invalidCharsRgx = new Regex("[^_a-zA-Z0-9]");
