@@ -1,14 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "yPulYi+uf26/Kad6+PL1/9CS5sOF+BDhXvpBc8cnqr0QV0sJpwH6hfm5rbnsZ2TtzT7lP6ux+pwQvHvRL5YkEQ==",
   "success": true,
   "projectFilePath": "D:\\Destop\\Windows\\WP-Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022.csproj",
-=======
-  "dgSpecHash": "HjQ4eRPFEzXGBn7YzoDNj/UAUwEGFNiFnwwaTCJvaNX2eeAJCFXrsUebvOvIilVpI36LWzYnRF7QnawNQW+hPg==",
-  "success": true,
-  "projectFilePath": "D:\\Destop\\win\\WP-Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022.csproj",
->>>>>>> 4db08281b640af4978f16cf6215023e37ec0b5cd
   "expectedPackageFiles": [
     "C:\\Users\\HAI YEN\\.nuget\\packages\\controlzex\\5.0.1\\controlzex.5.0.1.nupkg.sha512",
     "C:\\Users\\HAI YEN\\.nuget\\packages\\fluent.ribbon\\9.0.4\\fluent.ribbon.9.0.4.nupkg.sha512",

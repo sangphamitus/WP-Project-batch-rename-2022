@@ -569,17 +569,15 @@ namespace Project_batch_rename_2022
         private void moveRuleToBottom(object sender, RoutedEventArgs e)
         {
             int index = chosenRulesListView.SelectedIndex;
-            if(index != _rulesList.Count - 1)
+            if (index == -1)
             {
-                var tmp = _rulesList[index];
-                for (var i = index; i < _rulesList.Count - 1; i++)
-                {
-                    _rulesList[i] = _rulesList[i + 1];
-                }
-                _rulesList[_rulesList.Count - 1] = tmp;
-
-                applyChangeForRules();
+                return;
             }
+            var tmp = _rulesList[index];
+            _rulesList.RemoveAt(index);
+            _rulesList.Insert(_rulesList.Count  , tmp);
+            applyChangeForRules();
+            chosenRulesListView.SelectedIndex = _rulesList.Count - 1;
         }
 
         private void NewProjectBtnClick(object sender, RoutedEventArgs e)
