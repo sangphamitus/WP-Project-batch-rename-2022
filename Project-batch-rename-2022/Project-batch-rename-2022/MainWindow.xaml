@@ -83,19 +83,19 @@
             <StackPanel Orientation="Vertical">
                 <Label Content="Chosen Rule(s) " Margin="8 0 0 0"></Label>
                 <StackPanel Orientation="Horizontal">
-                    <Button Width="40" Height="30" Margin="8,4,0,4" Background="Transparent" BorderThickness="0" >
+                    <Button Name="moveToTop" Click="moveToTop_Click" Width="40" Height="30" Margin="8,4,0,4" Background="Transparent" BorderThickness="0" >
                         <Image Source="icons/move-to-top.png" RenderOptions.BitmapScalingMode="HighQuality"/>
                         <Button.ToolTip>
                             <ToolTip Content="Move Rule To Top"/>
                         </Button.ToolTip>
                     </Button>
-                    <Button Width="40" Height="30" Margin="0,4,0,4" Background="Transparent" BorderThickness="0">
+                    <Button Name="moveRuleUp" Click="moveRuleUp_Click" Width="40" Height="30" Margin="0,4,0,4" Background="Transparent" BorderThickness="0">
                         <Image Source="icons/move-up.png" RenderOptions.BitmapScalingMode="HighQuality"/>
                         <Button.ToolTip>
                             <ToolTip Content="Move Rule To Previous"/>
                         </Button.ToolTip>
                     </Button>
-                    <Button Width="40" Height="30" Margin="0,4,0,4" Background="Transparent" BorderThickness="0" >
+                    <Button x:Name="moveRuleDown" Click="moveRuleDown_Click" Width="40" Height="30" Margin="0,4,0,4" Background="Transparent" BorderThickness="0" >
                         <Image Source="icons/move-down.png" RenderOptions.BitmapScalingMode="HighQuality"/>
                         <Button.ToolTip>
                             <ToolTip Content="Move Rule To Next"/>
