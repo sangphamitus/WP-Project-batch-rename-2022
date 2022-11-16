@@ -99,7 +99,7 @@
 ---
 ## Phân việc:
 >> - [ ]  3 Rules (1,3,4) - Sương
->> - [ ]  3 Rules (5,6,7) - Yến
+>> - [X]  3 Rules (5,6,7) - Yến - 03/11/2022
 >> - [ ]  2 Rules (2,8) - Trí
 >> - [X]  Load file + folder + giao diện tương ứng - Sang - 29/10/2022
 

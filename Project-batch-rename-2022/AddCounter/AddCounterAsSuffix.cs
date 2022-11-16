@@ -22,7 +22,7 @@ namespace AddCounter
             this._counter++;
             return result;
         }
-        public string applyRule(string filename)
+        public string applyRule(string filename, string type)
         {
             string result;
             string[] parts = filename.Split('.');
@@ -59,6 +59,8 @@ namespace AddCounter
         {
             throw new NotImplementedException();
         }
+
+      
 
         public static string ruleName { get => "Add Counter As Suffix"; }
        

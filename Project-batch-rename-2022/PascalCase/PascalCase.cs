@@ -14,7 +14,7 @@ namespace PascalCase
 
 
    
-        public string applyRule(string filename)
+        public string applyRule(string filename,string type)
         {
 
             int index = filename.LastIndexOf('.');
