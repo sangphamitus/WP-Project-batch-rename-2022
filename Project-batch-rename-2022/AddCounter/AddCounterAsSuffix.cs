@@ -24,10 +24,17 @@ namespace AddCounter
         }
         public string applyRule(string filename, string type)
         {
-            string result;
-            string[] parts = filename.Split('.');
-            result = parts[0] + "_" + generateCounter();
-            if (parts.Length > 1) result = result + "." + parts[1];
+            int index = filename.LastIndexOf('.');
+            string name = "", extension = "";
+            if (index != -1 && type == "File")
+            {
+                name = filename.Substring(0, index);
+                extension = filename.Substring(index);
+            }
+            else name = filename;
+           
+            string result = name + "_" + generateCounter()+extension;
+           
             return result;
 
         }

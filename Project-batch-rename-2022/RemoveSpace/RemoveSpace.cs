@@ -10,16 +10,18 @@ namespace RemoveSpace
 
         public string applyRule(string filename,string type)
         {
-            int index = filename.LastIndexOf('.');
-            string name = "", extension = "";
-            if (index != -1)
-            {
-                name = filename.Substring(0, index);
-                extension = filename.Substring(index);
-            }
-            else name = filename;
-            string result =name.Trim()+extension;
-            return result;
+          
+                int index = filename.LastIndexOf('.');
+                string name = "";string extension = "";
+                if (index != -1 && type=="File")
+                {
+                    name = filename.Substring(0, index);
+                    extension = filename.Substring(index);
+                }
+                else name = filename;
+                string result = name.Trim() + extension;
+                return result;
+            
         }
 
         public void reset()

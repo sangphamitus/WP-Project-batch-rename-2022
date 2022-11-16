@@ -19,7 +19,7 @@ namespace PascalCase
 
             int index = filename.LastIndexOf('.');
             string name = "", extension = "";
-            if (index != -1)
+            if (index != -1 && type=="File")
             {
                 name = filename.Substring(0, index);
                 extension = filename.Substring(index);

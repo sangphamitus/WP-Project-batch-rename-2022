@@ -30,10 +30,11 @@ namespace AddCounter
         }
         public string applyRule(string filename,string type)
         {
+            
             string result;
-            string[] parts = filename.Split('.');
-            result = generateCounter() + "_"+ parts[0];
-            if (parts.Length > 1) result = result + "." + parts[1];
+            
+            result = generateCounter() +"_"+ filename;
+           
             return result;
 
         }

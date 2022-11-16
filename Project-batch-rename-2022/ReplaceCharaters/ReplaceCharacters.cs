@@ -131,16 +131,6 @@ namespace ReplaceCharacters
             this._newC =data;
             this._oldC =data;
         }
-
-<<<<<<< HEAD
-=======
-            // [oldchar]\\[newchar]
-            if(data=="")return new ReplaceCharacters();
-            string[] parts = data.Split('\\');
-            return new ReplaceCharacters(parts[0], parts[1]);
-        }
->>>>>>> 2d01ca0c2e311365458f1c4e64d3a84596f1b570
-
         public string applyRule(string filename,string type)
         {
             string result = filename;
