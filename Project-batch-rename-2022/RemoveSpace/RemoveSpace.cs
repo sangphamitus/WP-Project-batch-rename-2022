@@ -10,10 +10,15 @@ namespace RemoveSpace
 
         public string applyRule(string filename)
         {
-            string[] parts = filename.Split('.');
-
-            string result = parts[0].Trim();
-            if (parts.Length > 1) result = result + "." + parts[1];
+            int index = filename.LastIndexOf('.');
+            string name = "", extension = "";
+            if (index != -1)
+            {
+                name = filename.Substring(0, index);
+                extension = filename.Substring(index);
+            }
+            else name = filename;
+            string result =name.Trim()+extension;
             return result;
         }
 

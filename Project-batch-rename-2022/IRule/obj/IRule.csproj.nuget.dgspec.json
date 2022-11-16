@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj": {}
+    "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\IRule\\IRule.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj": {
+    "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\IRule\\IRule.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj",
+        "projectUniqueName": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\IRule\\IRule.csproj",
         "projectName": "IRule",
-        "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj",
-        "packagesPath": "C:\\Users\\Sang\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\obj\\",
+        "projectPath": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\IRule\\IRule.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\IRule\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Sang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
