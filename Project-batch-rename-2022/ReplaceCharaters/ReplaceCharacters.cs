@@ -165,7 +165,7 @@ namespace ReplaceCharacters
             return (new EditReplaceCharacters(this)).getCurrentRule();
         }
 
-        public bool isEditatble()
+        public bool isEditatble() 
         {
             return true;
         }
