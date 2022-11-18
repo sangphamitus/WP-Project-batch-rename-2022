@@ -59,7 +59,6 @@ namespace Project_batch_rename_2022
         /// </summary>
 
 
-        ObservableCollection<object> _ruleList = new ObservableCollection<object>();
 
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -1233,6 +1232,49 @@ namespace Project_batch_rename_2022
         {
             _fullList.RemoveAt(ItemListView.SelectedIndex);
             _fullListResult.RemoveAt(ItemListView.SelectedIndex);
+        }
+
+
+        private void moveRuleUp_Click(object sender, RoutedEventArgs e)
+        {
+            int index= chosenRulesListView.SelectedIndex;
+            if(index == -1 || index ==0)
+            {
+                return;
+            }
+            IRules item = _rulesList[index];
+            _rulesList.RemoveAt(index);
+            _rulesList.Insert(index - 1, item);
+            applyChangeForRules();
+            chosenRulesListView.SelectedIndex = index-1;
+        }
+
+        private void moveToTop_Click(object sender, RoutedEventArgs e)
+        {
+            int index = chosenRulesListView.SelectedIndex;
+            if (index == -1)
+            {
+                return;
+            }
+            IRules item = _rulesList[index];
+            _rulesList.RemoveAt(index);
+            _rulesList.Insert(0, item);
+            applyChangeForRules();
+            chosenRulesListView.SelectedIndex = 0;
+        }
+
+        private void moveRuleDown_Click(object sender, RoutedEventArgs e)
+        {
+            int index = chosenRulesListView.SelectedIndex;
+            if (index == -1 || index == _rulesList.Count-1)
+            {
+                return;
+            }
+            IRules item = _rulesList[index];
+            _rulesList.RemoveAt(index);
+            _rulesList.Insert(index + 1, item);
+            applyChangeForRules();
+            chosenRulesListView.SelectedIndex = index +1;
         }
 
     }
