@@ -59,7 +59,6 @@ namespace Project_batch_rename_2022
         /// </summary>
 
 
-        ObservableCollection<object> _ruleList = new ObservableCollection<object>();
 
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -114,7 +113,7 @@ namespace Project_batch_rename_2022
             _ruleFactory.Inject(LowerCase.LowerCase.ruleName, new LowerCase.LowerCase());
             _ruleFactory.Inject(PascalCase.PascalCase.ruleName, new PascalCase.PascalCase());
             _ruleFactory.Inject(RemoveSpace.RemoveSpace.ruleName, new RemoveSpace.RemoveSpace());
-            _ruleFactory.Inject(ReplaceCharaters.ReplaceCharacters.ruleName, new ReplaceCharaters.ReplaceCharacters());
+            _ruleFactory.Inject(ReplaceCharacters.ReplaceCharacters.ruleName, new ReplaceCharacters.ReplaceCharacters());
 
 
             ruleNames = _ruleFactory.listKeys();
@@ -612,8 +611,11 @@ namespace Project_batch_rename_2022
         private void removeRuleBtnClick(object sender, RoutedEventArgs e)
         {
             int index = chosenRulesListView.SelectedIndex;
-            _rulesList.RemoveAt(index);
-            applyChangeForRules();
+            if (index != -1)
+            {
+                _rulesList.RemoveAt(index);
+                applyChangeForRules();
+            }
         }
 
         private void chosenRulesListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -625,8 +627,11 @@ namespace Project_batch_rename_2022
         {
 
             int index = chosenRulesListView.SelectedIndex;
-            _rulesList.RemoveAt(index);
-            applyChangeForRules();
+            if (index != -1)
+            {
+                _rulesList.RemoveAt(index);
+                applyChangeForRules();
+            }
         }
 
         private void moveRuleToBottom(object sender, RoutedEventArgs e)
@@ -1110,6 +1115,13 @@ namespace Project_batch_rename_2022
                     
 
                 }
+                switch (result)
+                {
+                    case System.Windows.Forms.DialogResult.Cancel:
+                    case System.Windows.Forms.DialogResult.Abort:
+                        return;
+                        
+                }
 
             }
             if (copyChecked || moveChecked)
@@ -1233,6 +1245,49 @@ namespace Project_batch_rename_2022
         {
             _fullList.RemoveAt(ItemListView.SelectedIndex);
             _fullListResult.RemoveAt(ItemListView.SelectedIndex);
+        }
+
+
+        private void moveRuleUp_Click(object sender, RoutedEventArgs e)
+        {
+            int index= chosenRulesListView.SelectedIndex;
+            if(index == -1 || index ==0)
+            {
+                return;
+            }
+            IRules item = _rulesList[index];
+            _rulesList.RemoveAt(index);
+            _rulesList.Insert(index - 1, item);
+            applyChangeForRules();
+            chosenRulesListView.SelectedIndex = index-1;
+        }
+
+        private void moveToTop_Click(object sender, RoutedEventArgs e)
+        {
+            int index = chosenRulesListView.SelectedIndex;
+            if (index == -1)
+            {
+                return;
+            }
+            IRules item = _rulesList[index];
+            _rulesList.RemoveAt(index);
+            _rulesList.Insert(0, item);
+            applyChangeForRules();
+            chosenRulesListView.SelectedIndex = 0;
+        }
+
+        private void moveRuleDown_Click(object sender, RoutedEventArgs e)
+        {
+            int index = chosenRulesListView.SelectedIndex;
+            if (index == -1 || index == _rulesList.Count-1)
+            {
+                return;
+            }
+            IRules item = _rulesList[index];
+            _rulesList.RemoveAt(index);
+            _rulesList.Insert(index + 1, item);
+            applyChangeForRules();
+            chosenRulesListView.SelectedIndex = index +1;
         }
 
     }

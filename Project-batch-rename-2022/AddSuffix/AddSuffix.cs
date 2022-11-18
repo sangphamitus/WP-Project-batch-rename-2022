@@ -1,5 +1,6 @@
 ﻿using IRule;
 using System;
+using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -67,8 +68,18 @@ namespace AddSuffix
             string str = editTxtBox.Text;
             if (str.Length != 0)
             {
-                ((AddSuffix)currentRule).setSuffix(str);
-                DialogResult = true;
+                Regex reg = new Regex("^[ \\.\\w-$()+=[\\];#@~,&']+$");
+
+                if (reg.Match(str).Success)
+                {
+                    ((AddSuffix)currentRule).setSuffix(str);
+                    DialogResult = true;
+                }
+                else
+                {
+                    MessageBox.Show("New suffix is invalid!");
+                }
+               
             }
         }
         public IRules getCurrentRule()
@@ -107,8 +118,16 @@ namespace AddSuffix
 
         public string applyRule(string filename, string type)
         {
-            string[] parts = filename.Split('.');
-            filename = parts[0]  + this._suffix + "."+ parts[1];
+            int index = filename.LastIndexOf('.');
+            string name = "", extension = "";
+            if (index != -1 && type == "File")
+            {
+                name = filename.Substring(0, index);
+                extension = filename.Substring(index);
+            }
+            else name = filename;
+            filename = name + this._suffix + extension;
+
             return filename;
         }
 
