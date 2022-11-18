@@ -113,7 +113,7 @@ namespace Project_batch_rename_2022
             _ruleFactory.Inject(LowerCase.LowerCase.ruleName, new LowerCase.LowerCase());
             _ruleFactory.Inject(PascalCase.PascalCase.ruleName, new PascalCase.PascalCase());
             _ruleFactory.Inject(RemoveSpace.RemoveSpace.ruleName, new RemoveSpace.RemoveSpace());
-            _ruleFactory.Inject(ReplaceCharaters.ReplaceCharacters.ruleName, new ReplaceCharaters.ReplaceCharacters());
+            _ruleFactory.Inject(ReplaceCharacters.ReplaceCharacters.ruleName, new ReplaceCharacters.ReplaceCharacters());
 
 
             ruleNames = _ruleFactory.listKeys();
@@ -611,8 +611,11 @@ namespace Project_batch_rename_2022
         private void removeRuleBtnClick(object sender, RoutedEventArgs e)
         {
             int index = chosenRulesListView.SelectedIndex;
-            _rulesList.RemoveAt(index);
-            applyChangeForRules();
+            if (index != -1)
+            {
+                _rulesList.RemoveAt(index);
+                applyChangeForRules();
+            }
         }
 
         private void chosenRulesListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -624,8 +627,11 @@ namespace Project_batch_rename_2022
         {
 
             int index = chosenRulesListView.SelectedIndex;
-            _rulesList.RemoveAt(index);
-            applyChangeForRules();
+            if (index != -1)
+            {
+                _rulesList.RemoveAt(index);
+                applyChangeForRules();
+            }
         }
 
         private void moveRuleToBottom(object sender, RoutedEventArgs e)

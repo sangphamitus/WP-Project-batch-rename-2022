@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -70,8 +71,19 @@ namespace AddPrefix
             string str = editTxtBox.Text;
             if (str.Length != 0)
             {
-               ((AddPrefix)currentRule).setPrefix( str);
-                DialogResult = true;
+
+                Regex reg = new Regex("^[ \\.\\w-$()+=[\\];#@~,&']+$");
+
+                if (reg.Match(str).Success)
+                {
+                    ((AddPrefix)currentRule).setPrefix(str);
+                    DialogResult = true;
+                }
+                else
+                {
+                    MessageBox.Show("New prefix is invalid!");
+                }
+               
             }
         }
         public IRules getCurrentRule()
