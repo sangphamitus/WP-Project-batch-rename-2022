@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022.csproj": {}
+    "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022.csproj": {}
   },
   "projects": {
-    "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\AddCounter\\AddCounter.csproj": {
+    "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\AddCounter\\AddCounter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\AddCounter\\AddCounter.csproj",
+        "projectUniqueName": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\AddCounter\\AddCounter.csproj",
         "projectName": "AddCounter",
-        "projectPath": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\AddCounter\\AddCounter.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\AddCounter\\obj\\",
+        "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\AddCounter\\AddCounter.csproj",
+        "packagesPath": "C:\\Users\\Sang\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\AddCounter\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Sang\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -32,8 +28,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\IRule\\IRule.csproj": {
-                "projectPath": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\IRule\\IRule.csproj"
+              "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj": {
+                "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj"
               }
             }
           }
@@ -70,21 +66,17 @@
         }
       }
     },
-    "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\AddPrefix\\AddPrefix.csproj": {
+    "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\AddPrefix\\AddPrefix.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\AddPrefix\\AddPrefix.csproj",
+        "projectUniqueName": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\AddPrefix\\AddPrefix.csproj",
         "projectName": "AddPrefix",
-        "projectPath": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\AddPrefix\\AddPrefix.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\AddPrefix\\obj\\",
+        "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\AddPrefix\\AddPrefix.csproj",
+        "packagesPath": "C:\\Users\\Sang\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\AddPrefix\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Sang\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -98,8 +90,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\IRule\\IRule.csproj": {
-                "projectPath": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\IRule\\IRule.csproj"
+              "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj": {
+                "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj"
               }
             }
           }
@@ -136,21 +128,17 @@
         }
       }
     },
-    "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\AddSuffix\\AddSuffix.csproj": {
+    "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\AddSuffix\\AddSuffix.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\AddSuffix\\AddSuffix.csproj",
+        "projectUniqueName": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\AddSuffix\\AddSuffix.csproj",
         "projectName": "AddSuffix",
-        "projectPath": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\AddSuffix\\AddSuffix.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\AddSuffix\\obj\\",
+        "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\AddSuffix\\AddSuffix.csproj",
+        "packagesPath": "C:\\Users\\Sang\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\AddSuffix\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Sang\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -164,8 +152,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\IRule\\IRule.csproj": {
-                "projectPath": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\IRule\\IRule.csproj"
+              "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj": {
+                "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj"
               }
             }
           }
@@ -202,21 +190,17 @@
         }
       }
     },
-    "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\ChangeExtension\\ChangeExtension.csproj": {
+    "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\ChangeExtension\\ChangeExtension.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\ChangeExtension\\ChangeExtension.csproj",
+        "projectUniqueName": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\ChangeExtension\\ChangeExtension.csproj",
         "projectName": "ChangeExtension",
-        "projectPath": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\ChangeExtension\\ChangeExtension.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\ChangeExtension\\obj\\",
+        "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\ChangeExtension\\ChangeExtension.csproj",
+        "packagesPath": "C:\\Users\\Sang\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\ChangeExtension\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Sang\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -230,8 +214,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\IRule\\IRule.csproj": {
-                "projectPath": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\IRule\\IRule.csproj"
+              "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj": {
+                "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj"
               }
             }
           }
@@ -268,21 +252,17 @@
         }
       }
     },
-    "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\DeleteWhiteSpace\\DeleteWhiteSpace.csproj": {
+    "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\DeleteWhiteSpace\\DeleteWhiteSpace.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\DeleteWhiteSpace\\DeleteWhiteSpace.csproj",
+        "projectUniqueName": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\DeleteWhiteSpace\\DeleteWhiteSpace.csproj",
         "projectName": "DeleteWhiteSpace",
-        "projectPath": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\DeleteWhiteSpace\\DeleteWhiteSpace.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\DeleteWhiteSpace\\obj\\",
+        "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\DeleteWhiteSpace\\DeleteWhiteSpace.csproj",
+        "packagesPath": "C:\\Users\\Sang\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\DeleteWhiteSpace\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Sang\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -296,8 +276,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\IRule\\IRule.csproj": {
-                "projectPath": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\IRule\\IRule.csproj"
+              "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj": {
+                "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj"
               }
             }
           }
@@ -334,21 +314,17 @@
         }
       }
     },
-    "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\IRule\\IRule.csproj": {
+    "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\IRule\\IRule.csproj",
+        "projectUniqueName": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj",
         "projectName": "IRule",
-        "projectPath": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\IRule\\IRule.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\IRule\\obj\\",
+        "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj",
+        "packagesPath": "C:\\Users\\Sang\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Sang\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -396,21 +372,17 @@
         }
       }
     },
-    "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\LowerCase\\LowerCase.csproj": {
+    "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\LowerCase\\LowerCase.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\LowerCase\\LowerCase.csproj",
+        "projectUniqueName": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\LowerCase\\LowerCase.csproj",
         "projectName": "LowerCase",
-        "projectPath": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\LowerCase\\LowerCase.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\LowerCase\\obj\\",
+        "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\LowerCase\\LowerCase.csproj",
+        "packagesPath": "C:\\Users\\Sang\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\LowerCase\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Sang\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -424,8 +396,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\IRule\\IRule.csproj": {
-                "projectPath": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\IRule\\IRule.csproj"
+              "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj": {
+                "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj"
               }
             }
           }
@@ -462,21 +434,17 @@
         }
       }
     },
-    "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\PascalCase\\PascalCase.csproj": {
+    "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\PascalCase\\PascalCase.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\PascalCase\\PascalCase.csproj",
+        "projectUniqueName": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\PascalCase\\PascalCase.csproj",
         "projectName": "PascalCase",
-        "projectPath": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\PascalCase\\PascalCase.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\PascalCase\\obj\\",
+        "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\PascalCase\\PascalCase.csproj",
+        "packagesPath": "C:\\Users\\Sang\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\PascalCase\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Sang\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -490,8 +458,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\IRule\\IRule.csproj": {
-                "projectPath": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\IRule\\IRule.csproj"
+              "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj": {
+                "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj"
               }
             }
           }
@@ -528,21 +496,17 @@
         }
       }
     },
-    "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022.csproj": {
+    "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022.csproj",
+        "projectUniqueName": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022.csproj",
         "projectName": "Project-batch-rename-2022",
-        "projectPath": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\Project-batch-rename-2022\\obj\\",
+        "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022.csproj",
+        "packagesPath": "C:\\Users\\Sang\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\Project-batch-rename-2022\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Sang\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -556,35 +520,35 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\AddCounter\\AddCounter.csproj": {
-                "projectPath": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\AddCounter\\AddCounter.csproj"
+              "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\AddCounter\\AddCounter.csproj": {
+                "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\AddCounter\\AddCounter.csproj"
               },
-              "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\AddPrefix\\AddPrefix.csproj": {
-                "projectPath": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\AddPrefix\\AddPrefix.csproj"
+              "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\AddPrefix\\AddPrefix.csproj": {
+                "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\AddPrefix\\AddPrefix.csproj"
               },
-              "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\AddSuffix\\AddSuffix.csproj": {
-                "projectPath": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\AddSuffix\\AddSuffix.csproj"
+              "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\AddSuffix\\AddSuffix.csproj": {
+                "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\AddSuffix\\AddSuffix.csproj"
               },
-              "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\ChangeExtension\\ChangeExtension.csproj": {
-                "projectPath": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\ChangeExtension\\ChangeExtension.csproj"
+              "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\ChangeExtension\\ChangeExtension.csproj": {
+                "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\ChangeExtension\\ChangeExtension.csproj"
               },
-              "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\DeleteWhiteSpace\\DeleteWhiteSpace.csproj": {
-                "projectPath": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\DeleteWhiteSpace\\DeleteWhiteSpace.csproj"
+              "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\DeleteWhiteSpace\\DeleteWhiteSpace.csproj": {
+                "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\DeleteWhiteSpace\\DeleteWhiteSpace.csproj"
               },
-              "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\IRule\\IRule.csproj": {
-                "projectPath": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\IRule\\IRule.csproj"
+              "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj": {
+                "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj"
               },
-              "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\LowerCase\\LowerCase.csproj": {
-                "projectPath": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\LowerCase\\LowerCase.csproj"
+              "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\LowerCase\\LowerCase.csproj": {
+                "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\LowerCase\\LowerCase.csproj"
               },
-              "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\PascalCase\\PascalCase.csproj": {
-                "projectPath": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\PascalCase\\PascalCase.csproj"
+              "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\PascalCase\\PascalCase.csproj": {
+                "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\PascalCase\\PascalCase.csproj"
               },
-              "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\RemoveSpace\\RemoveSpace.csproj": {
-                "projectPath": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\RemoveSpace\\RemoveSpace.csproj"
+              "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\RemoveSpace\\RemoveSpace.csproj": {
+                "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\RemoveSpace\\RemoveSpace.csproj"
               },
-              "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\ReplaceCharaters\\ReplaceCharaters.csproj": {
-                "projectPath": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\ReplaceCharaters\\ReplaceCharaters.csproj"
+              "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\ReplaceCharaters\\ReplaceCharaters.csproj": {
+                "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\ReplaceCharaters\\ReplaceCharaters.csproj"
               }
             }
           }
@@ -635,21 +599,17 @@
         }
       }
     },
-    "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\RemoveSpace\\RemoveSpace.csproj": {
+    "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\RemoveSpace\\RemoveSpace.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\RemoveSpace\\RemoveSpace.csproj",
+        "projectUniqueName": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\RemoveSpace\\RemoveSpace.csproj",
         "projectName": "RemoveSpace",
-        "projectPath": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\RemoveSpace\\RemoveSpace.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\RemoveSpace\\obj\\",
+        "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\RemoveSpace\\RemoveSpace.csproj",
+        "packagesPath": "C:\\Users\\Sang\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\RemoveSpace\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Sang\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -663,8 +623,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\IRule\\IRule.csproj": {
-                "projectPath": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\IRule\\IRule.csproj"
+              "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj": {
+                "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj"
               }
             }
           }
@@ -701,21 +661,17 @@
         }
       }
     },
-    "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\ReplaceCharaters\\ReplaceCharaters.csproj": {
+    "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\ReplaceCharaters\\ReplaceCharaters.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\ReplaceCharaters\\ReplaceCharaters.csproj",
+        "projectUniqueName": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\ReplaceCharaters\\ReplaceCharaters.csproj",
         "projectName": "ReplaceCharaters",
-        "projectPath": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\ReplaceCharaters\\ReplaceCharaters.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\ReplaceCharaters\\obj\\",
+        "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\ReplaceCharaters\\ReplaceCharaters.csproj",
+        "packagesPath": "C:\\Users\\Sang\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\ReplaceCharaters\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Sang\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -729,8 +685,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\IRule\\IRule.csproj": {
-                "projectPath": "E:\\Hk1_năm 3\\Lập trình win\\m2\\Project-batch-rename-2022\\IRule\\IRule.csproj"
+              "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj": {
+                "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj"
               }
             }
           }

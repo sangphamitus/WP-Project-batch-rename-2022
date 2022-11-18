@@ -1115,6 +1115,13 @@ namespace Project_batch_rename_2022
                     
 
                 }
+                switch (result)
+                {
+                    case System.Windows.Forms.DialogResult.Cancel:
+                    case System.Windows.Forms.DialogResult.Abort:
+                        return;
+                        
+                }
 
             }
             if (copyChecked || moveChecked)
