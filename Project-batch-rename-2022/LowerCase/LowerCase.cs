@@ -9,7 +9,7 @@ namespace LowerCase
         {
 
         }
-        public string applyRule(string filename)
+        public string applyRule(string filename,string type)
         {
             filename = Regex.Replace(filename, @"[A-Z]", m => m.ToString().ToLower());
             return filename;

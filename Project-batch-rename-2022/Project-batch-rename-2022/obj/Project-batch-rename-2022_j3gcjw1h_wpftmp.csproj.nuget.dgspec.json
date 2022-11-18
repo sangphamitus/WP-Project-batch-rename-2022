@@ -1,0 +1,727 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\AddCounter\\AddCounter.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\AddCounter\\AddCounter.csproj",
+        "projectName": "AddCounter",
+        "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\AddCounter\\AddCounter.csproj",
+        "packagesPath": "C:\\Users\\Sang\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\AddCounter\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Sang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {
+              "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj": {
+                "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\AddPrefix\\AddPrefix.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\AddPrefix\\AddPrefix.csproj",
+        "projectName": "AddPrefix",
+        "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\AddPrefix\\AddPrefix.csproj",
+        "packagesPath": "C:\\Users\\Sang\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\AddPrefix\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Sang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {
+              "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj": {
+                "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\AddSuffix\\AddSuffix.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\AddSuffix\\AddSuffix.csproj",
+        "projectName": "AddSuffix",
+        "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\AddSuffix\\AddSuffix.csproj",
+        "packagesPath": "C:\\Users\\Sang\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\AddSuffix\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Sang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {
+              "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj": {
+                "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\ChangeExtension\\ChangeExtension.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\ChangeExtension\\ChangeExtension.csproj",
+        "projectName": "ChangeExtension",
+        "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\ChangeExtension\\ChangeExtension.csproj",
+        "packagesPath": "C:\\Users\\Sang\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\ChangeExtension\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Sang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {
+              "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj": {
+                "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\DeleteWhiteSpace\\DeleteWhiteSpace.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\DeleteWhiteSpace\\DeleteWhiteSpace.csproj",
+        "projectName": "DeleteWhiteSpace",
+        "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\DeleteWhiteSpace\\DeleteWhiteSpace.csproj",
+        "packagesPath": "C:\\Users\\Sang\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\DeleteWhiteSpace\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Sang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {
+              "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj": {
+                "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj",
+        "projectName": "IRule",
+        "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj",
+        "packagesPath": "C:\\Users\\Sang\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Sang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\LowerCase\\LowerCase.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\LowerCase\\LowerCase.csproj",
+        "projectName": "LowerCase",
+        "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\LowerCase\\LowerCase.csproj",
+        "packagesPath": "C:\\Users\\Sang\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\LowerCase\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Sang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {
+              "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj": {
+                "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\PascalCase\\PascalCase.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\PascalCase\\PascalCase.csproj",
+        "projectName": "PascalCase",
+        "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\PascalCase\\PascalCase.csproj",
+        "packagesPath": "C:\\Users\\Sang\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\PascalCase\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Sang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {
+              "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj": {
+                "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022.csproj",
+        "projectName": "Project-batch-rename-2022",
+        "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\Project-batch-rename-2022\\Project-batch-rename-2022.csproj",
+        "packagesPath": "C:\\Users\\Sang\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\Project-batch-rename-2022\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Sang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {
+              "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\AddCounter\\AddCounter.csproj": {
+                "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\AddCounter\\AddCounter.csproj"
+              },
+              "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\AddPrefix\\AddPrefix.csproj": {
+                "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\AddPrefix\\AddPrefix.csproj"
+              },
+              "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\AddSuffix\\AddSuffix.csproj": {
+                "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\AddSuffix\\AddSuffix.csproj"
+              },
+              "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\ChangeExtension\\ChangeExtension.csproj": {
+                "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\ChangeExtension\\ChangeExtension.csproj"
+              },
+              "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\DeleteWhiteSpace\\DeleteWhiteSpace.csproj": {
+                "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\DeleteWhiteSpace\\DeleteWhiteSpace.csproj"
+              },
+              "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj": {
+                "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj"
+              },
+              "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\LowerCase\\LowerCase.csproj": {
+                "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\LowerCase\\LowerCase.csproj"
+              },
+              "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\PascalCase\\PascalCase.csproj": {
+                "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\PascalCase\\PascalCase.csproj"
+              },
+              "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\RemoveSpace\\RemoveSpace.csproj": {
+                "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\RemoveSpace\\RemoveSpace.csproj"
+              },
+              "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\ReplaceCharaters\\ReplaceCharaters.csproj": {
+                "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\ReplaceCharaters\\ReplaceCharaters.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "Fluent.Ribbon": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.WindowsAPICodePack-Shell": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "PropertyChanged.Fody": {
+              "target": "Package",
+              "version": "[4.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\RemoveSpace\\RemoveSpace.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\RemoveSpace\\RemoveSpace.csproj",
+        "projectName": "RemoveSpace",
+        "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\RemoveSpace\\RemoveSpace.csproj",
+        "packagesPath": "C:\\Users\\Sang\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\RemoveSpace\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Sang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {
+              "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj": {
+                "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\ReplaceCharaters\\ReplaceCharaters.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\ReplaceCharaters\\ReplaceCharaters.csproj",
+        "projectName": "ReplaceCharaters",
+        "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\ReplaceCharaters\\ReplaceCharaters.csproj",
+        "packagesPath": "C:\\Users\\Sang\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\ReplaceCharaters\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Sang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {
+              "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj": {
+                "projectPath": "C:\\Users\\Sang\\Desktop\\Nam3\\HK1\\WP\\ĐA\\DA1\\source\\Project-batch-rename-2022\\IRule\\IRule.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
