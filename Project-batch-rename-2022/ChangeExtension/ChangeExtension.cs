@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
@@ -98,7 +99,7 @@ namespace ChangeExtension
 
     }
 
-    public class ChangeExtension : IRules
+    public class ChangeExtension : IRules, ICloneable
     {
 
         private string _extension;
@@ -161,6 +162,39 @@ namespace ChangeExtension
             return true;
         }
 
+        public object Clone()
+        {
+            return MemberwiseClone();
+        }
+
+        public string toJSON()
+        {
+            var obj = new 
+            {
+                ruleName = ruleName,
+                _extension = this._extension,
+            };
+            var options = new JsonSerializerOptions
+            {
+                WriteIndented = true
+            };
+            var jsonString = JsonSerializer.Serialize(obj, options);
+            return jsonString;
+        }
+
+        public bool importPreset(JSONruleFile preset)
+        {
+            try
+            {
+                this._extension = preset._extension;
+                return true;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.ToString());
+                return false;
+            }
+        }
 
         public static string ruleName { get => "Chang Extension"; }
 

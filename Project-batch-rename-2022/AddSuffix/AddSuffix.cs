@@ -1,5 +1,6 @@
 ﻿using IRule;
 using System;
+using System.Text.Json;
 using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Controls;
@@ -93,7 +94,7 @@ namespace AddSuffix
 
     }
 
-    public class AddSuffix : IRules
+    public class AddSuffix : IRules, ICloneable
     {
 
         private string _suffix;
@@ -157,6 +158,39 @@ namespace AddSuffix
             return true;
         }
 
+        public object Clone()
+        {
+            return MemberwiseClone();
+        }
+
+        public string toJSON()
+        {
+            var obj = new
+            {
+                ruleName = ruleName,
+                _suffix = this._suffix,
+            };
+            var options = new JsonSerializerOptions
+            {
+                WriteIndented = true
+            };
+            var jsonString = JsonSerializer.Serialize(obj, options);
+            return jsonString;
+        }
+
+        public bool importPreset(JSONruleFile preset)
+        {
+            try
+            {
+                this.setSuffix(preset._suffix);
+                return true;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.ToString());
+                return false;
+            }
+        }
 
         public static string ruleName { get => "Add Suffix"; }
 

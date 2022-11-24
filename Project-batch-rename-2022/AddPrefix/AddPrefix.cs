@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
@@ -97,7 +98,7 @@ namespace AddPrefix
 
     }
 
-    public class AddPrefix : IRules
+    public class AddPrefix : IRules, ICloneable
     {
 
         private string _prefix;
@@ -152,9 +153,41 @@ namespace AddPrefix
             return true;
         }
 
+        public object Clone()
+        {
+            return MemberwiseClone();
+        }
+
+        public string toJSON()
+        {
+
+            var obj = new 
+            {
+                ruleName = ruleName,
+                _prefix = this._prefix
+            };
+            var options = new JsonSerializerOptions
+            {
+                WriteIndented = true
+            };
+            var jsonString = JsonSerializer.Serialize(obj, options);
+            return jsonString;
+        }
 
         public static string ruleName { get => "Add Prefix"; }
+        public bool importPreset(JSONruleFile preset)
+        {
+            try
+            {
+                this.setPrefix(preset._prefix);
+                return true;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.ToString());
+                return false;
+            }
+        }
 
-       
     }
 }
