@@ -6,7 +6,7 @@
         xmlns:Fluent="clr-namespace:Fluent;assembly=Fluent"
         xmlns:local="clr-namespace:Project_batch_rename_2022"
         mc:Ignorable="d"
-        Title="BatchRename" Height="650" Width="1150" Loaded="Window_Loaded">
+        Title="BatchRename" Height="650" Width="1250" Loaded="Window_Loaded">
   
     <StackPanel Orientation="Vertical">
         <Fluent:Ribbon>
@@ -75,7 +75,7 @@
 
             <Fluent:RibbonTabItem Header="Help">
                 <Fluent:RibbonGroupBox>
-                    <Fluent:Button Header="Readme"  Icon="icons/read-me.png" LargeIcon="icons/read-me.png"  Padding="8, 8, 8, 0"/>
+                    <Fluent:Button Header="Readme"  Icon="icons/read-me.png" LargeIcon="icons/read-me.png"  Padding="8, 8, 8, 0" Click="ReadmeBtnClick"/>
                 </Fluent:RibbonGroupBox>
             </Fluent:RibbonTabItem>
         </Fluent:Ribbon>
@@ -114,7 +114,7 @@
                         </Button.ToolTip>
                     </Button>
                 </StackPanel>
-                <ListView Name="chosenRulesListView" Width="200" Height="440" Margin="8,0,0,0" SelectionChanged="chosenRulesListView_SelectionChanged">
+                <ListView Name="chosenRulesListView" Width="300" Height="440" Margin="8,0,0,0" SelectionChanged="chosenRulesListView_SelectionChanged">
                     <ListView.Resources>
                         <ContextMenu x:Key="ChosenRuleContextMenu">
                             <MenuItem Header="Edit Parameters" Click="EditRules"/>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace Project_batch_rename_2022
@@ -31,6 +32,24 @@ namespace Project_batch_rename_2022
         public int getStatus()
         {
             return this.Status;
+        }
+        public string toJSON()
+        {
+            var obj = new
+            {
+                Filename = this.Filename,
+                NewFilename = this.NewFilename,
+                Pathname = this.Pathname,
+                Result = this.Result,
+                Type = this.Type,
+                Status = this.Status
+            };
+            var options = new JsonSerializerOptions
+            {
+                WriteIndented = true
+            };
+            var jsonString = JsonSerializer.Serialize(obj, options);
+            return jsonString;
         }
     }
 }

@@ -1,39 +1,49 @@
 ﻿
 using Fluent;
 using IRule;
+using Microsoft.VisualBasic.Logging;
+using Microsoft.Win32;
 using Microsoft.WindowsAPICodePack.Dialogs;
 using System;
-using System.CodeDom;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using System.Security.Policy;
+using System.Text;
+using System.Text.Json;
+using System.Text.Json.Nodes;
+using System.Text.Json.Serialization;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Shapes;
-using System.Windows.Xps;
-using static System.Net.WebRequestMethods;
+using CommonDialog = System.Windows.Forms.CommonDialog;
 using File = System.IO.File;
 using MessageBox = System.Windows.Forms.MessageBox;
+using OpenFileDialog = System.Windows.Forms.OpenFileDialog;
 using Path = System.IO.Path;
+using SaveFileDialog = System.Windows.Forms.SaveFileDialog;
 
 namespace Project_batch_rename_2022
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+   
     public partial class MainWindow : RibbonWindow
     {
 
+        private string AutoSavePath= Path.Combine(System.IO.Directory.GetCurrentDirectory(), "autosave.proj");
         //project handle
+       
         private string currentProjectName = "Unsaved Project";
-        private string currentProjectPath = "autosave.proj";
+        private string currentProjectPath = "";
         private string currentPresetPath = "";
-
+        private bool AutoSave = false;
+        
         //end project handle
 
 
@@ -46,7 +56,9 @@ namespace Project_batch_rename_2022
 
         public MainWindow()
         {
+            
             InitializeComponent();
+           
         }
 
         ObservableCollection<FileInOS> _files = new ObservableCollection<FileInOS>();
@@ -63,6 +75,7 @@ namespace Project_batch_rename_2022
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            Debug.WriteLine(AutoSavePath);
             itemTypes = new BindingList<string>()
             {
                 "File",
@@ -81,19 +94,7 @@ namespace Project_batch_rename_2022
             };
 
             this.Title = currentProjectName;
-            //ruleNames = new BindingList<string>()
-            //{
-            //    "Change extension",
-            //     "Add Counter",
-            //     "Trim",
-            //     "Remove white space",
-            //     "Replace character",
-            //     "Add a prefix",
-            //     "Add a subffix",
-            //     "Lowercase",
-            //     "PascalCase"
-
-            //};
+           
 
             _files = new ObservableCollection<FileInOS>()
             {
@@ -123,8 +124,8 @@ namespace Project_batch_rename_2022
             rulesComboBox.ItemsSource = ruleNames;
             chosenRulesListView.ItemsSource = _rulesList;
             conflictComboBox.ItemsSource = conflictHandle;
-
-
+            AutoSave= MessageBox.Show("Do you want to auto save? ","AutoSaving",MessageBoxButtons.OKCancel)== System.Windows.Forms.DialogResult.OK;
+            AutoLoad();
         }
 
 
@@ -270,9 +271,9 @@ namespace Project_batch_rename_2022
                         counter++;
                         _fullList.Add(new FileInOS
                         {
-                            Filename = extract[extract.Length -1],
+                            Filename = extract[extract.Length - 1],
                             NewFilename = extract[extract.Length - 1],
-                            Pathname =path,
+                            Pathname = path,
                             Type = "Folder",
                             Result = "",
                             Status = 0
@@ -287,8 +288,8 @@ namespace Project_batch_rename_2022
                             Status = 0
                         });
                     }
-                  
-                    
+
+
                     //string path = dialog.SelectedPath + "\\";
                     //string[] folders = Directory.GetDirectories(path);
                     //List<FolderInOS> newFoldernames = new List<FolderInOS>();
@@ -383,7 +384,9 @@ namespace Project_batch_rename_2022
                 }
 
             }
+           
             applyChangeForRules();
+            if(AutoSave)AutoSaving();
         }
         private int RecursiveReadFileOnly(string folder)
         {
@@ -537,10 +540,12 @@ namespace Project_batch_rename_2022
             }
             else
             {
-                _rulesList.Add(_ruleFactory.rules(rulesComboBox.SelectedItem.ToString()).parse(""));
+                IRules rule = (IRules)_ruleFactory.rules(rulesComboBox.SelectedItem.ToString()).Clone();
+                _rulesList.Add(rule);
             }
 
             applyChangeForRules();
+           if(AutoSave) AutoSaving();
         }
 
         private void ChosenRule_DoubleClick(object sender, MouseButtonEventArgs e)
@@ -587,14 +592,15 @@ namespace Project_batch_rename_2022
                 }
 
             }
+            if (AutoSave) AutoSaving();
         }
-        private string applyChangeOnFile(string filename,string type)
+        private string applyChangeOnFile(string filename, string type)
         {
             string res = filename;
             foreach (IRules rule in _rulesList)
             {
 
-                res = rule.applyRule(res,type);
+                res = rule.applyRule(res, type);
             }
             return res;
         }
@@ -616,6 +622,7 @@ namespace Project_batch_rename_2022
                 _rulesList.RemoveAt(index);
                 applyChangeForRules();
             }
+            if (AutoSave) AutoSaving();
         }
 
         private void chosenRulesListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -632,6 +639,7 @@ namespace Project_batch_rename_2022
                 _rulesList.RemoveAt(index);
                 applyChangeForRules();
             }
+            if (AutoSave) AutoSaving();
         }
 
         private void moveRuleToBottom(object sender, RoutedEventArgs e)
@@ -643,35 +651,422 @@ namespace Project_batch_rename_2022
             }
             var tmp = _rulesList[index];
             _rulesList.RemoveAt(index);
-            _rulesList.Insert(_rulesList.Count  , tmp);
+            _rulesList.Insert(_rulesList.Count, tmp);
             applyChangeForRules();
             chosenRulesListView.SelectedIndex = _rulesList.Count - 1;
+            if (AutoSave) AutoSaving();
         }
 
         private void NewProjectBtnClick(object sender, RoutedEventArgs e)
         {
+            if( this.currentProjectPath!="" && this.currentProjectPath!=AutoSavePath)
+            {
 
+                if (MessageBox.Show("Would you like to save your project first ? ", "Save Project ?", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
+                {
+                    SaveProject();
+                }
+            }
+            this.currentProjectName = "Unsaved Project";
+            this.currentProjectPath = "newproject.proj";
+            this.currentPresetPath = "";
+            _rulesList.Clear();
+            _fullList.Clear();
+            Title = this.currentProjectName;
+            MessageBox.Show("New project created");
+            
+            
         }
+        private void AutoLoad()
+        {
+            try
+            {
+                StreamReader input;
+                if (!File.Exists(AutoSavePath)) return;
+                input = new StreamReader(AutoSavePath);
 
+                string file = input.ReadToEnd();
+                input.Close();
+                dynamic rules = JsonObject.Parse(file);
+
+                foreach (object item in rules["Rules"])
+                {
+                    JSONruleFile? ruleFile = JsonSerializer.Deserialize<JSONruleFile>(item.ToString());
+
+
+                    IRules rule = (IRules)_ruleFactory.rules(ruleFile.ruleName).Clone();
+                    rule.importPreset(ruleFile);
+                    _rulesList.Add(rule);
+                }
+                foreach (object item in rules["WorkBench"])
+                {
+                    JSONworkBench? fileChange = JsonSerializer.Deserialize<JSONworkBench>(item.ToString());
+                    FileChange order;
+                    switch (fileChange.Type)
+                    {
+                        case "Folder":
+                            order = new FolderInOS
+                            {
+                                Filename = fileChange.Filename,
+                                NewFilename = fileChange.NewFilename,
+                                Type = fileChange.Type,
+                                Status = fileChange.Status,
+                                Pathname = fileChange.Pathname
+                            };
+                            _fullList.Add(order);
+                            break;
+                        case "File":
+                            order = new FileInOS
+                            {
+                                Filename = fileChange.Filename,
+                                NewFilename = fileChange.NewFilename,
+                                Type = fileChange.Type,
+                                Status = fileChange.Status,
+                                Pathname = fileChange.Pathname
+                            };
+                            _fullList.Add(order);
+                            break;
+                    }
+
+
+                }
+
+
+                StringBuilder action = new StringBuilder();
+                action.Append(rules["Action"]);
+                switch (action.ToString())
+                {
+                    case "Origin": renameOriginal.IsChecked = true; break;
+                    case "CopyToNew": copyToNew.IsChecked = true; break;
+                    case "MoveToNew": moveToNew.IsChecked = true; break;
+
+
+                }
+                action.Clear();
+                action.Append(rules["Conflict"]);
+                conflictComboBox.SelectedValue = action.ToString();
+            }
+            catch(Exception e)
+            {
+                return;
+            }
+        }
+        private void AutoSaving()
+        {
+            if(AutoSave==true)
+            {
+                StreamWriter output;
+                output = new StreamWriter(AutoSavePath);
+                StringBuilder stringBuilder = new StringBuilder();
+                stringBuilder.AppendLine("{");
+                stringBuilder.AppendLine($"\"ProjName\":\"{this.currentProjectName}\",");
+                stringBuilder.AppendLine($"\"Conflict\":\"{((conflictComboBox.SelectedItem == null) ? "" : conflictComboBox.SelectedItem)}\",");
+
+                string Action = "Origin";
+                if (copyToNew.IsChecked == true) Action = "CopyToNew";
+                if (moveToNew.IsChecked == true) Action = "MoveToNew";
+
+                stringBuilder.AppendLine($"\"Action\":\"{Action}\",");
+
+                stringBuilder.Append("\"Rules\":[");
+                foreach (IRules rule in _rulesList)
+                {
+
+                    string JSON = rule.toJSON();
+
+                    Debug.WriteLine(JSON);
+
+                    stringBuilder.Append(JSON);
+                    if (rule != _rulesList[_rulesList.Count() - 1])
+                    {
+                        stringBuilder.Append(",");
+                    }
+                }
+                stringBuilder.Append("],\"WorkBench\":[");
+                foreach (FileChange item in _fullList)
+                {
+                    stringBuilder.AppendLine(item.toJSON());
+                    if (item != _fullList[_fullList.Count() - 1])
+                    {
+                        stringBuilder.Append(",");
+                    }
+                }
+
+                stringBuilder.AppendLine("]}");
+                output.WriteLine(stringBuilder.ToString());
+                output.Close();
+                Title = this.currentProjectName;
+            }
+        }
         private void OpenProjectBtnClick(object sender, RoutedEventArgs e)
         {
+            if (this.currentProjectPath != AutoSavePath)
+            {
 
+                switch(MessageBox.Show("Would you like to save your project first ? ", "Save Project ?", MessageBoxButtons.OKCancel) )
+                {
+                    case System.Windows.Forms.DialogResult.OK:
+
+                    SaveProject();
+                        break;
+             
+                }
+
+
+            }
+            string path;
+            _rulesList.Clear();
+            _fullList.Clear();
+            var dialog = new OpenFileDialog();
+            dialog.Filter = "PROJ (*.proj)|*.proj";
+
+            if (dialog.ShowDialog() != System.Windows.Forms.DialogResult.OK)
+            {
+                return;
+            }
+            path = dialog.FileName;
+
+
+            this. currentProjectPath = path;
+            this.currentProjectName = Path.GetFileName(path);
+            Title = this.currentProjectName;
+            StreamReader input;
+            input = new StreamReader(path);
+            string file = input.ReadToEnd();
+            input.Close();
+            dynamic rules = JsonObject.Parse(file);
+            
+            foreach (object item in rules["Rules"])
+            {
+                JSONruleFile? ruleFile = JsonSerializer.Deserialize<JSONruleFile>(item.ToString());
+
+               
+                IRules rule = (IRules)_ruleFactory.rules(ruleFile.ruleName).Clone();
+                rule.importPreset(ruleFile);
+                _rulesList.Add(rule);
+            }
+            foreach (object item in rules["WorkBench"])
+            {
+                JSONworkBench? fileChange = JsonSerializer.Deserialize<JSONworkBench>(item.ToString());
+                FileChange order ;
+                switch (fileChange.Type)
+                {
+                    case "Folder":
+                        order = new FolderInOS
+                        {
+                            Filename = fileChange.Filename,
+                            NewFilename = fileChange.NewFilename,
+                            Type = fileChange.Type,
+                            Status = fileChange.Status,
+                            Pathname = fileChange.Pathname
+                        };
+                        _fullList.Add(order);
+                        break;
+                    case "File":
+                        order = new FileInOS
+                        {
+                            Filename = fileChange.Filename,
+                            NewFilename = fileChange.NewFilename,
+                            Type = fileChange.Type,
+                            Status = fileChange.Status,
+                            Pathname = fileChange.Pathname
+                        };
+                        _fullList.Add(order);
+                        break;
+                }
+
+
+            }
+
+
+            StringBuilder action = new StringBuilder();
+            action.Append(rules["Action"]);
+            switch (action.ToString())
+            {
+                case "Origin": renameOriginal.IsChecked=true; break;
+                case "CopyToNew": copyToNew.IsChecked = true; break;
+                case "MoveToNew": moveToNew.IsChecked = true; break;
+
+
+            }
+            action.Clear();
+            action.Append(rules["Conflict"]);
+            conflictComboBox.SelectedValue = action.ToString();
+        
+            MessageBox.Show("Load project succeed");
+            applyChangeForRules();
         }
 
         private void SaveProjectBtnClick(object sender, RoutedEventArgs e)
         {
+            if (this.currentProjectPath==""||this.currentProjectPath==AutoSavePath)
+            {
+                this.currentProjectPath = "";
+                SaveProject();
 
+            }
+           else
+            {
+                MessageBox.Show("Have nothing to save");
+            }
         }
+        private bool SaveProject()
+        {
+            if (this.currentProjectPath == "")
+            {
+                var dialog = new SaveFileDialog();
+                dialog.Filter = "PROJ (*.proj)|*.proj";
 
+                if (dialog.ShowDialog() != System.Windows.Forms.DialogResult.OK)
+                {
+                    return false;
+                }
+                this.currentProjectPath= dialog.FileName;
+                this.currentProjectName= Path.GetFileName( dialog.FileName);
+            }
+            StreamWriter output;
+            output = new StreamWriter(this.currentProjectPath);
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.AppendLine("{");
+            stringBuilder.AppendLine($"\"ProjName\":\"{this.currentProjectName}\",");
+            stringBuilder.AppendLine($"\"Conflict\":\"{((conflictComboBox.SelectedItem==null)?"":conflictComboBox.SelectedItem)}\",");
+
+            string Action = "Origin";
+            if (copyToNew.IsChecked == true) Action = "CopyToNew";
+            if (moveToNew.IsChecked == true) Action = "MoveToNew";
+           
+            stringBuilder.AppendLine($"\"Action\":\"{Action}\",");
+
+            stringBuilder.Append("\"Rules\":[");
+            foreach (IRules rule in _rulesList)
+            {
+
+                string JSON = rule.toJSON();
+
+                Debug.WriteLine(JSON);
+
+                stringBuilder.Append(JSON);
+                if (rule != _rulesList[_rulesList.Count() - 1])
+                {
+                    stringBuilder.Append(",");
+                }
+            }
+            stringBuilder.Append("],\"WorkBench\":[");
+            foreach (FileChange item in _fullList)
+            {
+                stringBuilder.AppendLine(item.toJSON());
+                if (item != _fullList[_fullList.Count() - 1] )
+                {
+                    stringBuilder.Append(",");
+                }
+            }
+
+            stringBuilder.AppendLine("]}");
+            output.WriteLine(stringBuilder.ToString());
+            output.Close();
+            Title = this.currentProjectName;
+            MessageBox.Show("Save success to: " + this.currentProjectName);
+            return true;
+        }
+        private bool SavePreset()
+        {
+            if (_rulesList.Count == 0)
+            {
+                MessageBox.Show("There are no selected rule to save.");
+                return false;
+            }
+            string path;
+            if (this.currentPresetPath == "")
+            {
+                var dialog = new SaveFileDialog();
+                dialog.Filter = "JSON (*.json)|*.json";
+
+                if (dialog.ShowDialog() != System.Windows.Forms.DialogResult.OK)
+                {
+                    return false;
+                }
+                path = dialog.FileName;
+            }
+
+            else
+            {
+                path = this.currentPresetPath;
+            }
+            StreamWriter output;
+            output = new StreamWriter(path);
+            output.Write("{\"Rules\":[");
+
+            foreach (IRules rule in _rulesList)
+            {
+
+                string JSON = rule.toJSON();
+
+                Debug.WriteLine(JSON);
+
+                output.Write(JSON);
+                if (rule != _rulesList[_rulesList.Count() - 1])
+                {
+                    output.Write(",");
+                }
+            }
+            output.Write("]}");
+            output.Close();
+            MessageBox.Show("Save success to: " + path);
+            return true;
+        }
 
         private void SavePresetBtnClick(object sender, RoutedEventArgs e)
         {
-
+            SavePreset();
         }
 
         private void OpenPresetBtnClick(object sender, RoutedEventArgs e)
         {
+            if (_rulesList.Count() != 0)
+            {
+         
+                switch (MessageBox.Show("Would you like to save your preset first ? ", "Save Preset ?", MessageBoxButtons.OKCancel))
+                {
+                    case System.Windows.Forms.DialogResult.OK:
+                   SavePreset();
+                        break;
+               
+                }
+                
+             
+            }
+            string path;
+            _rulesList.Clear();
+           
+                var dialog = new OpenFileDialog();
+                dialog.Filter = "JSON (*.json)|*.json";
 
+                if (dialog.ShowDialog() != System.Windows.Forms.DialogResult.OK)
+                {
+                    return;
+                }
+                path = dialog.FileName;
+            
+            this.currentPresetPath = path;
+            
+            StreamReader input;
+            input = new StreamReader(path);
+            string file = input.ReadToEnd();
+            dynamic rules = JsonObject.Parse( file);
+           
+            foreach(object item in rules["Rules"])
+            {
+                JSONruleFile? ruleFile = JsonSerializer.Deserialize<JSONruleFile>(item.ToString());
+             
+                Debug.WriteLine(ruleFile.ruleName);
+                IRules rule = (IRules)_ruleFactory.rules(ruleFile.ruleName).Clone();
+                rule.importPreset(ruleFile);
+                _rulesList.Add(rule);
+            }
+            input.Close();
+            MessageBox.Show("Load preset succeed");
+            applyChangeForRules();
+       
         }
 
 
@@ -692,7 +1087,7 @@ namespace Project_batch_rename_2022
                             ((FileInOS)item).Result = "File not available";
                         }
 
-                        ((FileInOS)item).NewFilename = applyChangeOnFile(((FileInOS)item).Filename,"File");
+                        ((FileInOS)item).NewFilename = applyChangeOnFile(((FileInOS)item).Filename, "File");
                         break;
 
                     case "Folder":
@@ -704,7 +1099,7 @@ namespace Project_batch_rename_2022
                             ((FolderInOS)item).Result = "Folder not available";
                         }
 
-                        ((FolderInOS)item).NewFilename = applyChangeOnFile(((FolderInOS)item).Filename,"Folder");
+                        ((FolderInOS)item).NewFilename = applyChangeOnFile(((FolderInOS)item).Filename, "Folder");
                         break;
                 }
 
@@ -792,7 +1187,7 @@ namespace Project_batch_rename_2022
                 {
                     string filename = Path.GetFileName(f);
 
-                   // string newFilename = Path.Combine(newFolderPath, filename);
+                    // string newFilename = Path.Combine(newFolderPath, filename);
 
                     FileInOS itemFile = null;
                     findFileInFullList(f, ref itemFile);
@@ -810,7 +1205,7 @@ namespace Project_batch_rename_2022
                         };
                     }
                     if (itemFile.Status != 0) continue;
-                    string  newFilename = Path.Combine(newFolderPath, itemFile.NewFilename);
+                    string newFilename = Path.Combine(newFolderPath, itemFile.NewFilename);
 
                     if (File.Exists(newFilename))
                     {
@@ -832,7 +1227,7 @@ namespace Project_batch_rename_2022
 
                             File.Delete(newFilename);
                             File.Copy(f, newFilename);
-                            itemFile.Filename=itemFile.NewFilename;
+                            itemFile.Filename = itemFile.NewFilename;
                             itemFile.Pathname = newFilename;
 
                         }
@@ -852,7 +1247,7 @@ namespace Project_batch_rename_2022
                 {
                     string foldername = Path.GetDirectoryName(d);
 
-                 //   string newFoldername = Path.Combine(newFolderPath, foldername);
+                    //   string newFoldername = Path.Combine(newFolderPath, foldername);
                     FolderInOS itemFolder = null;
                     findFolderInFullList(d, ref itemFolder);
                     if (itemFolder == null)
@@ -870,7 +1265,7 @@ namespace Project_batch_rename_2022
                     }
 
                     if (itemFolder.Status != 0) continue;
-                   string  newFoldername = Path.Combine(newFolderPath, itemFolder.NewFilename);
+                    string newFoldername = Path.Combine(newFolderPath, itemFolder.NewFilename);
                     if (Directory.Exists(newFoldername))
                     {
 
@@ -911,7 +1306,7 @@ namespace Project_batch_rename_2022
 
 
         }
-        private void RenameFolderAndFile(string folder,string Type)
+        private void RenameFolderAndFile(string folder, string Type)
         {
             bool Override = false;
             bool Skip = false;
@@ -922,7 +1317,7 @@ namespace Project_batch_rename_2022
                 if (conflictComboBox.SelectedItem.ToString() == "Skip") Skip = true;
             }
 
-            if(Type=="File")
+            if (Type == "File")
             {
                 FileInOS itemFile = null;
                 findFileInFullList(folder, ref itemFile);
@@ -955,10 +1350,10 @@ namespace Project_batch_rename_2022
                 newPath = Path.Combine(newPath, RootnameSplit[i]);
 
             }
-            string newName =Path.Combine( newPath, itemRoot.NewFilename);
-        
+            string newName = Path.Combine(newPath, itemRoot.NewFilename);
+
             Directory.Move(folder, newName);
-            itemRoot.Pathname= newName;
+            itemRoot.Pathname = newName;
             itemRoot.Filename = itemRoot.NewFilename;
             itemRoot.Status = 1;
             itemRoot.Result = "Successed";
@@ -969,11 +1364,11 @@ namespace Project_batch_rename_2022
                 {
                     case "Folder":
 
-                        ((FolderInOS)item).Pathname=((FolderInOS)item).Pathname.Replace(folder,newName);
+                        ((FolderInOS)item).Pathname = ((FolderInOS)item).Pathname.Replace(folder, newName);
 
                         break;
                     case "File":
-                        ((FileInOS)item).Pathname=((FileInOS)item).Pathname.Replace(folder, newName);
+                        ((FileInOS)item).Pathname = ((FileInOS)item).Pathname.Replace(folder, newName);
                         break;
 
                 }
@@ -1061,7 +1456,7 @@ namespace Project_batch_rename_2022
                 {
                     case "Folder":
                         RenameFolderAndFile(((FolderInOS)item).Pathname, "Folder");
-                       
+
 
                         break;
                     case "File":
@@ -1079,10 +1474,10 @@ namespace Project_batch_rename_2022
             bool Override = false;
             bool Skip = false;
             string path = "";
-            bool copyChecked = (copyToNew.IsChecked==true);
+            bool copyChecked = (copyToNew.IsChecked == true);
             bool moveChecked = (moveToNew.IsChecked == true);
             bool originChecked = (renameOriginal.IsChecked == true);
-          
+
             if (conflictComboBox.SelectedItem != null)
             {
                 if (conflictComboBox.SelectedItem.ToString() == "Override") Override = true;
@@ -1090,7 +1485,7 @@ namespace Project_batch_rename_2022
             }
             if (originChecked)
             {
-                if( _rulesList.ToArray().Length!=0)
+                if (_rulesList.ToArray().Length != 0)
                 {
                     RenameFileAndFolder();
 
@@ -1104,15 +1499,15 @@ namespace Project_batch_rename_2022
             {
                 var dialog = new System.Windows.Forms.FolderBrowserDialog();
                 var result = dialog.ShowDialog();
-               
-               
+
+
                 if (System.Windows.Forms.DialogResult.OK == result)
                 {
 
                     // ItemListView.ItemsSource = _folders;
 
                     path = dialog.SelectedPath;
-                    
+
 
                 }
                 switch (result)
@@ -1120,7 +1515,7 @@ namespace Project_batch_rename_2022
                     case System.Windows.Forms.DialogResult.Cancel:
                     case System.Windows.Forms.DialogResult.Abort:
                         return;
-                        
+
                 }
 
             }
@@ -1181,7 +1576,7 @@ namespace Project_batch_rename_2022
                                 ((FileInOS)item).Filename = ((FileInOS)item).NewFilename;
                                 ((FileInOS)item).Pathname = newFile;
                             }
-                        
+
 
                             break;
 
@@ -1189,19 +1584,19 @@ namespace Project_batch_rename_2022
                     }
 
                 }
-            }    
-            if ( moveChecked )
+            }
+            if (moveChecked)
             {
-                for (int i=0;i<_fullListResult.Count;i++)
+                for (int i = 0; i < _fullListResult.Count; i++)
                 {
                     FileChange item = _fullListResult[i];
                     if (_fullList[i].getStatus() != 1) continue;
                     switch (_fullList[i].getType())
                     {
-                      
+
                         case "Folder":
-                            if(Directory.Exists(((FolderInOS)item).Pathname))
-                            Directory.Delete(((FolderInOS)item).Pathname,true);
+                            if (Directory.Exists(((FolderInOS)item).Pathname))
+                                Directory.Delete(((FolderInOS)item).Pathname, true);
                             _fullListResult[i] = new FolderInOS
                             {
                                 Filename = ((FolderInOS)_fullList[_fullListResult.IndexOf(item)]).Filename,
@@ -1214,8 +1609,8 @@ namespace Project_batch_rename_2022
                             };
                             break;
                         case "File":
-                            if(File.Exists(((FileInOS)item).Pathname))
-                            File.Delete(((FileInOS)item).Pathname);
+                            if (File.Exists(((FileInOS)item).Pathname))
+                                File.Delete(((FileInOS)item).Pathname);
                             _fullListResult[i] = new FileInOS
                             {
                                 Filename = ((FileInOS)_fullList[_fullListResult.IndexOf(item)]).Filename,
@@ -1234,7 +1629,7 @@ namespace Project_batch_rename_2022
                 }
             }
         }
-      
+
 
         private void typeComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -1245,13 +1640,14 @@ namespace Project_batch_rename_2022
         {
             _fullList.RemoveAt(ItemListView.SelectedIndex);
             _fullListResult.RemoveAt(ItemListView.SelectedIndex);
+            if (AutoSave) AutoSaving();
         }
 
 
         private void moveRuleUp_Click(object sender, RoutedEventArgs e)
         {
-            int index= chosenRulesListView.SelectedIndex;
-            if(index == -1 || index ==0)
+            int index = chosenRulesListView.SelectedIndex;
+            if (index == -1 || index == 0)
             {
                 return;
             }
@@ -1259,7 +1655,8 @@ namespace Project_batch_rename_2022
             _rulesList.RemoveAt(index);
             _rulesList.Insert(index - 1, item);
             applyChangeForRules();
-            chosenRulesListView.SelectedIndex = index-1;
+            chosenRulesListView.SelectedIndex = index - 1;
+            if (AutoSave) AutoSaving();
         }
 
         private void moveToTop_Click(object sender, RoutedEventArgs e)
@@ -1274,12 +1671,13 @@ namespace Project_batch_rename_2022
             _rulesList.Insert(0, item);
             applyChangeForRules();
             chosenRulesListView.SelectedIndex = 0;
+            if (AutoSave) AutoSaving();
         }
 
         private void moveRuleDown_Click(object sender, RoutedEventArgs e)
         {
             int index = chosenRulesListView.SelectedIndex;
-            if (index == -1 || index == _rulesList.Count-1)
+            if (index == -1 || index == _rulesList.Count - 1)
             {
                 return;
             }
@@ -1287,8 +1685,15 @@ namespace Project_batch_rename_2022
             _rulesList.RemoveAt(index);
             _rulesList.Insert(index + 1, item);
             applyChangeForRules();
-            chosenRulesListView.SelectedIndex = index +1;
+            chosenRulesListView.SelectedIndex = index + 1;
+            if (AutoSave) AutoSaving();
         }
 
+        private void ReadmeBtnClick(object sender, RoutedEventArgs e)
+        {
+            var screen = new ReadMe();
+            screen.ShowDialog();
+
+        }
     }
 }

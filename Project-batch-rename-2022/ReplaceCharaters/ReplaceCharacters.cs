@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
@@ -112,7 +113,7 @@ namespace ReplaceCharacters
 
     }
 
-    public class ReplaceCharacters : IRules
+    public class ReplaceCharacters : IRules,ICloneable
     {
 
         private string _newC;
@@ -179,6 +180,42 @@ namespace ReplaceCharacters
             return true;
         }
 
+        public object Clone()
+        {
+            return MemberwiseClone();
+        }
+
+        public string toJSON()
+        {
+            var obj = new 
+            {
+                ruleName = ruleName,
+                _newC = this._newC,
+                _oldC = this._oldC,
+
+            };
+            var options = new JsonSerializerOptions
+            {
+                WriteIndented = true
+            };
+            var jsonString = JsonSerializer.Serialize(obj, options);
+            return jsonString;
+        }
+
+        public bool importPreset(JSONruleFile preset)
+        {
+            try
+            {
+                this._newC = preset._newC;
+                this._oldC = preset._oldC;
+                return true;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.ToString());
+                return false;
+            }
+        }
 
         public static string ruleName { get => "Replace Characters"; }
 

@@ -1,8 +1,10 @@
 ﻿using IRule;
+using System.Text.Json;
+using System.Windows;
 
 namespace RemoveSpace
 {
-    public class RemoveSpace : IRules
+    public class RemoveSpace : IRules,ICloneable
     {
         public RemoveSpace()
         {
@@ -47,6 +49,40 @@ namespace RemoveSpace
         IRules? IRules.EditRule()
         {
             throw new NotImplementedException();
+        }
+
+        public object Clone()
+        {
+            return MemberwiseClone();
+        }
+
+        public string toJSON()
+        {
+            var obj = new 
+            {
+                ruleName = ruleName,
+
+            };
+            var options = new JsonSerializerOptions
+            {
+                WriteIndented = true
+            };
+            var jsonString = JsonSerializer.Serialize(obj, options);
+            return jsonString;
+        }
+
+        public bool importPreset(JSONruleFile preset)
+        {
+            try
+            {
+              
+                return true;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.ToString());
+                return false;
+            }
         }
     }
 }
